@@ -11,3 +11,5 @@ We wanted to create a galica like game but with different mechanics.
 #### Sound
 - Music by NineThree01 at OpenGameArt.org
 - Centurion_of_war at OpenGameArt.org
+- MUSIC BY OBLIDIVM http://oblidivmmusic.blogspot.com.es/
+
