@@ -1,5 +1,5 @@
 # Welcome to Galanaught
-We wanted to create a galica like game but with different mechanics.
+We wanted to create a Galaga-like game but with bullet hell mechanics, endless mode with timer, and powerups.
 
 
 [![GitHub Project Board](https://img.shields.io/badge/Feature%20Tracking-Click%20Here-blue)](https://github.com/users/darvie/projects/4)
