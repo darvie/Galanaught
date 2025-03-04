@@ -2,6 +2,7 @@
 We wanted to create a galica like game but with different mechanics.
 
 
+[![GitHub Project Board](https://img.shields.io/badge/Feature%20Tracking-Click%20Here-blue)](https://github.com/users/darvie/projects/4)
 
 
 
