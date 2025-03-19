@@ -26,7 +26,7 @@ public class EnemyStats : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+   /* private void OnTriggerEnter(Collider other)
     {
         BulletStats bullet = other.GetComponent<BulletStats>();
 
@@ -37,9 +37,9 @@ public class EnemyStats : MonoBehaviour
             TakeDamage(bullet.damage);
             Destroy(other.gameObject); // Destroy the bullet after collision
         }
-    }
+    } */
 
-    void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         enemyHealth -= damage;
         Debug.Log($"Enemy hit! Health remaining: {enemyHealth}");
@@ -64,8 +64,4 @@ public class EnemyStats : MonoBehaviour
         Debug.Log($"Enemy stats updated: Health = {enemyHealth}, Damage = {enemyDamage}");
     }
 
-    public void movement()
-    {
-
-    }
 }

@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class BulletStats : MonoBehaviour
 {
+    [Header("Scripts")]
+    public EnemyStats EnemyStats;
+
+    [Header("Stats")]
     public float damage = 10f;
     public void IncreaseDamage(float amount)
     {
@@ -16,8 +20,22 @@ public class BulletStats : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy")) // Ensure the enemy has the tag "Enemy"
+        {
+            EnemyStats enemyHealth = other.GetComponent<EnemyStats>();
+            if (enemyHealth != null)
+            {
+                EnemyStats.TakeDamage(damage);
+            }
+
+            Destroy(gameObject); // Destroy the bullet after collision
+        }
+    }
+
+        // Update is called once per frame
+        void Update()
     {
         
     }

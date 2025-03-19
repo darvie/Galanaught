@@ -22,11 +22,11 @@ public class Timer : MonoBehaviour
     {
         if (enemyStats == null)
         {
-            enemyStats = FindObjectOfType<EnemyStats>();  // Auto-find the script if not set
+            enemyStats = FindFirstObjectByType<EnemyStats>();  // Auto-find the script if not set
         }
         if (bulletStats == null)
         {
-            bulletStats = FindObjectOfType<BulletStats>(); // Auto-find the script if not assigned
+            bulletStats = FindFirstObjectByType<BulletStats>(); // Auto-find the script if not assigned
         }
 
         // Start the scaling loop
