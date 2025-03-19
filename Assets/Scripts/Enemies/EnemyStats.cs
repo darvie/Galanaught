@@ -16,7 +16,7 @@ public class EnemyStats : MonoBehaviour
 
         if (bulletStats == null)
         {
-            bulletStats = FindObjectOfType<BulletStats>(); // Auto-find the script if not assigned
+            bulletStats = FindFirstObjectByType<BulletStats>(); // Auto-find the script if not assigned
         }
 
     }
@@ -26,19 +26,35 @@ public class EnemyStats : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
-    if(!other.gameObject.CompareTag("Bullet"))
+        BulletStats bullet = other.GetComponent<BulletStats>();
+
+        
+        if (bullet != null)
         {
-
-        }
-        enemyHealth -= bulletDamage;
-
-        if (enemyHealth == 0)
-        {
-
+            Debug.Log($"I WAS HIT");
+            TakeDamage(bullet.damage);
+            Destroy(other.gameObject); // Destroy the bullet after collision
         }
     }
+
+    void TakeDamage(float damage)
+    {
+        enemyHealth -= damage;
+        Debug.Log($"Enemy hit! Health remaining: {enemyHealth}");
+
+        if (enemyHealth <= 0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        Debug.Log("Enemy defeated!");
+        Destroy(gameObject); // Destroy enemy when health reaches zero
+    }
+
 
 
     public void IncreaseStats(float healthIncrease, float damageIncrease)
