@@ -7,11 +7,11 @@ using UnityEngine.SocialPlatforms.Impl;
 public class GameManager : SingletonMonoBehavior<GameManager>
 {
     [SerializeField] private int maxLives = 3;
-    [SerializeField] private Bullet bullet;
+ //   [SerializeField] private Bullet bullet;
     [SerializeField] private Transform bricksContainer;
     [SerializeField] private LifeCounter lifecounter;
     [SerializeField] private int point = 0;
-    [SerializeField] private PointCounter pointsCounter;
+ //   [SerializeField] private PointCounter pointsCounter;
 
     private int currentBrickCount;
     private int totalBrickCount;
@@ -27,12 +27,12 @@ public class GameManager : SingletonMonoBehavior<GameManager>
         currentLives = PlayerPrefs.GetInt("Lives", maxLives);  // Default to maxLives if not set
         point = PlayerPrefs.GetInt("Points", 0);
         lifecounter.UpdateLife(currentLives);
-        pointsCounter.UpdatePoint(point);
+     //   pointsCounter.UpdatePoint(point);
     }
     public void IncreasePoint()
     {
         point++;
-        pointsCounter.UpdatePoint(point);
+    //    pointsCounter.UpdatePoint(point);
         Debug.Log("Score: " + point);
         SaveGame();
 
@@ -41,7 +41,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
     private void OnEnable()
     {
         InputManager.Instance.OnFire.AddListener(FireBullet);
-        bullet.ResetBall();
+      //  bullet.ResetBall();
         totalBrickCount = bricksContainer.childCount;
         currentBrickCount = bricksContainer.childCount;
     }
@@ -53,7 +53,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
 
     private void FireBullet()
     {
-        bullet.FireBullet();
+      //  bullet.FireBullet();
     }
 
     public void SaveGame()
@@ -90,7 +90,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
         }
         else
         {
-            bullet.ResetBullet();
+         //   bullet.ResetBullet();
         }
     }
 

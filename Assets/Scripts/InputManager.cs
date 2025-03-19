@@ -1,13 +1,20 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class InputManager : MonoBehaviour
+public class InputManager : SingletonMonoBehavior<InputManager>
 {
     public UnityEvent<Vector2> OnMove = new UnityEvent<Vector2>();
-    
+    public UnityEvent OnFire;
+
     void Update()
     {
         Vector2 input = Vector2.zero;
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            OnFire?.Invoke();
+        }
+
         if (Input.GetKey(KeyCode.W))
         {
             input += Vector2.up;
