@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Ball : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
     [Header("Ball Movement")]
     [SerializeField] private float ballLaunchSpeed;
@@ -38,7 +38,7 @@ public class Ball : MonoBehaviour
         }
     }
 
-    public void ResetBall()
+    public void ResetBullet()
     {
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
@@ -50,7 +50,7 @@ public class Ball : MonoBehaviour
         isBallActive = false;
     }
 
-    public void FireBall()
+    public void FireBullet()
     {
         if (isBallActive) return;
         transform.parent = null;
