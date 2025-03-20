@@ -3,9 +3,6 @@ using System.Collections;
 
 public class EnemyStats : MonoBehaviour
 {
-    [Header("Scripts")]
-    public BulletStats bulletStats;
-
     [Header("Enemy Stats")]
     public float enemyHealth = 100f;   // Initial health of the enemy
     public float enemyDamage = 10f;    // Initial damage of the enemy
@@ -14,11 +11,6 @@ public class EnemyStats : MonoBehaviour
     void Start()
     {
 
-        if (bulletStats == null)
-        {
-            bulletStats = FindFirstObjectByType<BulletStats>(); // Auto-find the script if not assigned
-        }
-
     }
 
     // Update is called once per frame
@@ -26,17 +18,24 @@ public class EnemyStats : MonoBehaviour
     {
         
     }
-   /* private void OnTriggerEnter(Collider other)
-    {
-        BulletStats bullet = other.GetComponent<BulletStats>();
+    /* private void OnTriggerEnter(Collider other)
+     {
+         BulletStats bullet = other.GetComponent<BulletStats>();
 
+
+         if (bullet != null)
+         {
+             Debug.Log($"I WAS HIT");
+             TakeDamage(bullet.damage);
+             Destroy(other.gameObject); // Destroy the bullet after collision
+         }
+     } 
+
+    public void OnCollisionEnter(Collision other)
+    {
+        Debug.Log($"I AM HIT");
+            TakeDamage(20);
         
-        if (bullet != null)
-        {
-            Debug.Log($"I WAS HIT");
-            TakeDamage(bullet.damage);
-            Destroy(other.gameObject); // Destroy the bullet after collision
-        }
     } */
 
     public void TakeDamage(float damage)

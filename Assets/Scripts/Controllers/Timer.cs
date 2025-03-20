@@ -30,8 +30,8 @@ public class Timer : MonoBehaviour
         }
 
         // Start the scaling loop
-        InvokeRepeating(nameof(IncrementStats), incrementInterval, incrementInterval);
-        InvokeRepeating(nameof(IncrimentBullet), incrementInterval, incrementInterval);
+        InvokeRepeating(nameof(IncrementStats), timer, incrementInterval);
+        InvokeRepeating(nameof(IncrimentBullet), timer, incrementInterval);
     }
 
     // Method to increment enemy health and damage
