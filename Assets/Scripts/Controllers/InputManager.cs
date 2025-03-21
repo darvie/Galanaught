@@ -6,31 +6,26 @@ public class InputManager : SingletonMonoBehavior<InputManager>
     public UnityEvent<Vector2> OnMove = new UnityEvent<Vector2>();
     public UnityEvent OnFire;
 
+
     void Update()
     {
         Vector2 input = Vector2.zero;
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            OnFire?.Invoke();
-        }
-
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             input += Vector2.up;
         }
 
-        if(Input.GetKey(KeyCode.S)) 
-        { 
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
             input += Vector2.down;
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             input += Vector2.left;
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             input += Vector2.right;
         }
