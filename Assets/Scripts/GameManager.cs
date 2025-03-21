@@ -11,7 +11,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
     [SerializeField] private Transform bricksContainer;
     [SerializeField] private LifeCounter lifecounter;
     [SerializeField] private int point = 0;
-    [SerializeField] private PointCounter pointsCounter;
+    [SerializeField] private ScoreCounterUI scoreCounter;
 
     private int currentBrickCount;
     private int totalBrickCount;
@@ -25,14 +25,14 @@ public class GameManager : SingletonMonoBehavior<GameManager>
         gameOverPanel.SetActive(false);
 
         currentLives = PlayerPrefs.GetInt("Lives", maxLives);  // Default to maxLives if not set
-        point = PlayerPrefs.GetInt("Points", 0);
+        point = PlayerPrefs.GetInt("Score", 0);
         lifecounter.UpdateLife(currentLives);
-        pointsCounter.UpdatePoint(point);
+        scoreCounter.UpdatePoint(point);
     }
     public void IncreasePoint()
     {
         point++;
-        pointsCounter.UpdatePoint(point);
+        scoreCounter.UpdatePoint(point);
         Debug.Log("Score: " + point);
         SaveGame();
 
@@ -41,7 +41,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
     private void OnEnable()
     {
         InputManager.Instance.OnFire.AddListener(FireBullet);
-        bullet.ResetBall();
+        bullet.ResetBullet();
         totalBrickCount = bricksContainer.childCount;
         currentBrickCount = bricksContainer.childCount;
     }
@@ -60,7 +60,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
     {
         // Save the current lives and points to PlayerPrefs
         PlayerPrefs.SetInt("Lives", currentLives);
-        PlayerPrefs.SetInt("Points", point);
+        PlayerPrefs.SetInt("Score", point);
         PlayerPrefs.Save();
     }
 
@@ -105,7 +105,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
     {
         // Reset the lives and points, or you can reset specific values
         PlayerPrefs.DeleteKey("Lives");
-        PlayerPrefs.DeleteKey("Points");
+        PlayerPrefs.DeleteKey("Score");
         PlayerPrefs.Save();  // Ensure data is written to disk
     }
 }
