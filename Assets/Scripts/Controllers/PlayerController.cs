@@ -33,8 +33,10 @@ public class PlayerController : MonoBehaviour
     {
         if (cooldownTimer <= 0)
         {
+            Vector3 offset = new Vector3(0, 0.5f, 0);
+
             Debug.Log("Pew!");
-            Instantiate(bulletPrefab, transform.position, transform.rotation);
+            Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
 
             cooldownTimer = fireDelay; // Reset the cooldown timer
             Debug.Log("Cooldown reset to: " + cooldownTimer);
