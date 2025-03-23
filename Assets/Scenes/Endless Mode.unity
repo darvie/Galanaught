@@ -469,6 +469,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputManager: {fileID: 1841944229}
   speed: 1
+  fireDelay: 0.1
+  bulletPrefab: {fileID: 8764292521863005384, guid: 29465f3fcbfcd5b4988f295c44c03c5a, type: 3}
 --- !u!54 &1268717115
 Rigidbody:
   m_ObjectHideFlags: 0

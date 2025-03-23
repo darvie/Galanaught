@@ -10,6 +10,10 @@ public class InputManager : SingletonMonoBehavior<InputManager>
     void Update()
     {
         Vector2 input = Vector2.zero;
+        if (Input.GetKey(KeyCode.Space))
+        {
+            OnFire?.Invoke();
+        }
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             input += Vector2.up;
