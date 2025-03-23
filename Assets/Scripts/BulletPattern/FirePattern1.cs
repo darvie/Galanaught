@@ -18,13 +18,13 @@ public class FirePattern1 : MonoBehaviour
         Vector3 bulMoveVector = new Vector3(bulDirX, bulDirY, 0f);
         Vector2 bulDir = (bulMoveVector - transform.position).normalized;
 
-       /*
-        GameObject bul = BulletPool.bulletPoolInstance.GetBullet();
+       
+        GameObject bul = BulletPool.BulletPoolInstance.GetBullet();
         bul.transform.position = transform.position;
         bul.transform.rotation = transform.rotation;
         bul.SetActive(true);
-        bul.GetComponent<Bullet>().SetMoveDirection(bulDir);
-       */
+        bul.GetComponent<EnemyBullet>().SetMoveDirection(bulDir);
+       
         angle += 10f;
     }
 

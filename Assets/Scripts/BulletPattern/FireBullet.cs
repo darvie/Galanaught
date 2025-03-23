@@ -10,7 +10,7 @@ public class FireBullet : MonoBehaviour
     [SerializeField] public float startAngle = 90f;
     [SerializeField] public float endAngle = 270f;
 
-    private Vector2 bulletMoveDirection;
+    private Vector2 BulletMoveDirection;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,11 +32,11 @@ public class FireBullet : MonoBehaviour
             Vector2 bulDir = (bulMoveVector - transform.position).normalized;
 
            
-             GameObject bul = BulletPool.bulletPoolInstance.GetBullet();
+             GameObject bul = BulletPool.BulletPoolInstance.GetBullet();
              bul.transform.position = transform.position;
              bul.transform.rotation = transform.rotation;
              bul.SetActive(true);
-             bul.GetComponent<Bullet>().SetMoveDirection(bulDir);
+             bul.GetComponent<EnemyBullet>().SetMoveDirection(bulDir);
             
             angle += 10f;
         }
