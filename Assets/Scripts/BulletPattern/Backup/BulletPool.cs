@@ -13,7 +13,7 @@ public class BulletPool : MonoBehaviour
 
     private void Awake()
     {
-      BulletPool instance = this;
+        BulletPoolInstance = this;
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
