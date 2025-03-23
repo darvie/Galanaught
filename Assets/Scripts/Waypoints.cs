@@ -50,8 +50,12 @@ public class Waypoints : MonoBehaviour
 
 IEnumerator WaitAtWaypoint()
     {
-        isWaiting = true;
-        yield return new WaitForSeconds(waitTime);
+
+        if (currentWaypointIdx == waypoints.Length - 1)
+        {
+            isWaiting = true;
+            yield return new WaitForSeconds(waitTime);
+        }
 
         // if looping enabled, incriment  and wrap if required
         // if not lop incriment but do not pass last waypoint
