@@ -4,7 +4,7 @@ using System.Collections;
 public class BulletMovement : MonoBehaviour
 {
     [SerializeField] private float maxSpeed = 5f;
-    [SerializeField] private float timer = 5f;
+    [SerializeField] private float timer = 3f;
     void Update()
     {
         Vector3 pos = transform.position;

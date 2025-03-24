@@ -4,10 +4,10 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
     [SerializeField] private float speed;
+    [SerializeField] private Rigidbody2D rb;
 
-    private Rigidbody rb;
     public float fireDelay = 0.1f;
-    float cooldownTimer = 0;
+    private float cooldownTimer = 0;
 
     public GameObject bulletPrefab;
     void Start()
@@ -15,18 +15,21 @@ public class PlayerController : MonoBehaviour
         inputManager.OnMove.AddListener(MovePlayer);
         inputManager.OnFire.AddListener(PlayerShoot);
         cooldownTimer -= Time.deltaTime;
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        cooldownTimer -= Time.deltaTime; // Decrement cooldown timer here
+        cooldownTimer -= Time.deltaTime;
+        if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
     }
 
     private void MovePlayer(Vector2 direction)
-    {
-        Vector2 moveDirection = new(direction.x, direction.y);
-        rb.AddForce(speed * moveDirection);
+    { 
+        rb.linearVelocity = direction * speed;
     }
 
     private void PlayerShoot()
