@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Galanaught logo_0: -1788494880767698602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
