@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class AudioManager : SingletonMonoBehavior<AudioManager>
 {
-    public AudioSource audioSource;
+    public AudioSource musicSource;
     public AudioSource sfxSource;
 
-    public AudioClip[] mainMenuMusic;
-    public AudioClip[] gameplayMusic;
-    public AudioClip[] bossBattleMusic;
-    public AudioClip defeatMusic;
-    public AudioClip levelUpMusic;
-    public AudioClip laserBulletSFX;
-    public AudioClip explosionSFX;
+    [SerializeField] public AudioClip[] bossBattleMusic;
+    [SerializeField] public AudioClip[] mainMenuMusic;
+    [SerializeField] public AudioClip[] gameplayMusic;
+    [SerializeField] public AudioClip defeatMusic;
+    [SerializeField] public AudioClip levelUpMusic;
+    [SerializeField] public AudioClip laserBulletSFX;
+    [SerializeField] public AudioClip explosionSFX;
 
     private int currentTrackIndex = 0; 
     private AudioClip[] currentPlaylist; 
@@ -46,17 +46,29 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     }
     public void PlayDefeatMusic()
     {
-        if (audioSource == null || defeatMusic == null) return;
+        if (musicSource == null || defeatMusic == null) return;
 
-        audioSource.Stop();
-        audioSource.clip = defeatMusic;
-        audioSource.loop = false; // No looping for defeat sound
-        audioSource.Play();
+        musicSource.Stop();
+        musicSource.clip = defeatMusic;
+        musicSource.loop = false; // No looping for defeat sound
+        musicSource.Play();
+    }
+
+    public void PlayLaserSFX() {
+
+        if (sfxSource == null || laserBulletSFX == null) return;
+        sfxSource.PlayOneShot(laserBulletSFX);
+    }
+    public void PlayExplosionSFX()
+    {
+
+        if (sfxSource == null || explosionSFX == null) return;
+        sfxSource.PlayOneShot(explosionSFX);
     }
 
     private void PlayPlaylist(AudioClip[] playlist)
     {
-        if (playlist == null || playlist.Length == 0 || audioSource == null) return;
+        if (playlist == null || playlist.Length == 0 || musicSource == null) return;
 
         currentPlaylist = playlist;
         currentTrackIndex = 0;
@@ -67,12 +79,12 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     {
         if (currentPlaylist == null || currentPlaylist.Length == 0) return;
 
-        audioSource.Stop();
-        audioSource.clip = currentPlaylist[currentTrackIndex];
-        audioSource.Play();
+        musicSource.Stop();
+        musicSource.clip = currentPlaylist[currentTrackIndex];
+        musicSource.Play();
 
         // Schedule the next track to play when the current one ends
-        Invoke(nameof(PlayNextTrack), audioSource.clip.length);
+        Invoke(nameof(PlayNextTrack), musicSource.clip.length);
     }
 
     private void PlayNextTrack()

@@ -12,6 +12,8 @@ public class MenuController : MonoBehaviour
     
     public string _newGameLevel;
     private string levelToLoad;
+    public AudioManager audioManager;
+
 
     public void NewGameDialogYes()
     {
@@ -21,6 +23,8 @@ public class MenuController : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(levelToLoad);
+        audioManager.PlayGameplayMusic();
+
     }
 
     public void SetVolume(float volume)
