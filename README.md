@@ -32,4 +32,8 @@ Players earn points by defeating enemies and their score multiplier increases as
 - Music by NineThree01 at OpenGameArt.org
 - Centurion_of_war at OpenGameArt.org
 - MUSIC BY OBLIDIVM http://oblidivmmusic.blogspot.com.es/
+- Rodeo ![](https://opengameart.org/users/rodeo)
+- KIIRA
+- Zander Noriega ![](https://opengameart.org/users/zander-noriega)
+- SwissArcadeGameEntertainment
 
