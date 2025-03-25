@@ -13,6 +13,7 @@ public class InputManager : SingletonMonoBehavior<InputManager>
         if (Input.GetKey(KeyCode.Space))
         {
             OnFire?.Invoke();
+            AudioManager.Instance.PlayLaserSFX();
         }
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {

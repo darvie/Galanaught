@@ -41,7 +41,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
     private void OnEnable()
     {
         InputManager.Instance.OnFire.AddListener(FireBullet);
-        bullet.ResetBullet();
+        //bullet.ResetBullet();
         totalBrickCount = bricksContainer.childCount;
         currentBrickCount = bricksContainer.childCount;
     }
@@ -90,7 +90,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
         }
         else
         {
-            bullet.ResetBullet();
+           // bullet.ResetBullet();
         }
     }
 
