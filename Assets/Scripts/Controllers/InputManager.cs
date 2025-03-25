@@ -10,9 +10,10 @@ public class InputManager : SingletonMonoBehavior<InputManager>
     void Update()
     {
         Vector2 input = Vector2.zero;
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             OnFire?.Invoke();
+            AudioManager.Instance.PlayLaserSFX();
         }
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {

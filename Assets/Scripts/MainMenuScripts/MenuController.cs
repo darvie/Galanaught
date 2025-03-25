@@ -12,6 +12,29 @@ public class MenuController : MonoBehaviour
     
     public string _newGameLevel;
     private string levelToLoad;
+    public AudioManager audioManager;
+
+    private void Start()
+    {
+        // Load saved volume or default to 100% (1.0)
+        if (PlayerPrefs.HasKey("masterVolume"))
+        {
+            float savedVolume = PlayerPrefs.GetFloat("masterVolume");
+            AudioListener.volume = savedVolume;
+            volumeSliderValue.value = savedVolume;
+        }
+        else
+        {
+            AudioListener.volume = 1f;
+            volumeSliderValue.value = 1f; // Start at 100%
+        }
+
+        // Update text value
+        volumeTextValue.text = volumeSliderValue.value.ToString("0.0");
+
+        // Listen for changes in slider value
+        volumeSliderValue.onValueChanged.AddListener(SetVolume);
+    }
 
     public void NewGameDialogYes()
     {
@@ -21,6 +44,8 @@ public class MenuController : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(levelToLoad);
+        audioManager.PlayGameplayMusic(); 
+
     }
 
     public void SetVolume(float volume)
@@ -32,7 +57,8 @@ public class MenuController : MonoBehaviour
     public void VolumeApply()
     {
         PlayerPrefs.SetFloat("masterVolume", AudioListener.volume);
-            StartCoroutine(confirmationBoX());
+        PlayerPrefs.Save(); // Ensure changes are stored
+        StartCoroutine(confirmationBoX());
     }
 
     public IEnumerator confirmationBoX()
