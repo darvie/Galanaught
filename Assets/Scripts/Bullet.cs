@@ -3,14 +3,13 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [Header("Ball Movement")]
-    [SerializeField] private float ballLaunchSpeed;
-    [SerializeField] private float minBallBounceBackSpeed;
-    [SerializeField] private float maxBallBounceBackSpeed;
+    [SerializeField] private float bulletLaunchSpeed;
+
     [Header("References")]
     [SerializeField] private Transform ballAnchor;
     [SerializeField] private Rigidbody rb;
 
-    public Audiomanager Audiomanager;
+    public AudioManager Audiomanager;
 
     private bool isBallActive;
 

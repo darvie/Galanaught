@@ -9,6 +9,9 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     public AudioClip[] gameplayMusic;
     public AudioClip[] bossBattleMusic;
     public AudioClip defeatMusic;
+    public AudioClip levelUpMusic;
+    public AudioClip laserBulletSFX;
+    public AudioClip explosionSFX;
 
     private int currentTrackIndex = 0; 
     private AudioClip[] currentPlaylist; 
