@@ -17,6 +17,7 @@ public class EnemyStats : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:Assets/Scripts/Enemies/EnemyStats.cs
     }
 
@@ -29,6 +30,9 @@ public class EnemyStats : MonoBehaviour
 =======
     /*private void OnTriggerEnter(Collider other)
 >>>>>>> Stashed changes:Assets/Scripts/Enemy/EnemyStats.cs
+=======
+    /*private void OnTriggerEnter(Collider other)
+>>>>>>> Stashed changes
 =======
     /*private void OnTriggerEnter(Collider other)
 >>>>>>> Stashed changes
@@ -49,10 +53,13 @@ public class EnemyStats : MonoBehaviour
         Debug.Log($"I AM HIT");
             TakeDamage(20);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:Assets/Scripts/Enemies/EnemyStats.cs
         
     } 
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -69,7 +76,10 @@ public class EnemyStats : MonoBehaviour
          }
      }*/
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes:Assets/Scripts/Enemy/EnemyStats.cs
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
