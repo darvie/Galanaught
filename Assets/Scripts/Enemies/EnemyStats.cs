@@ -18,7 +18,7 @@ public class EnemyStats : MonoBehaviour
     {
         
     }
-    /* private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
      {
          BulletStats bullet = other.GetComponent<BulletStats>();
 
@@ -36,7 +36,7 @@ public class EnemyStats : MonoBehaviour
         Debug.Log($"I AM HIT");
             TakeDamage(20);
         
-    } */
+    } 
 
     public void TakeDamage(float damage)
     {
