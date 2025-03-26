@@ -14,32 +14,9 @@ public class EnemyStats : MonoBehaviour
     [Header("PowerUp")]
     public List<PowerUp> lootTable = new List<PowerUp>();
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:Assets/Scripts/Enemies/EnemyStats.cs
-    }
+    /*private void OnTriggerEnter(Collider other)
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void OnTriggerEnter(Collider other)
-=======
-    /*private void OnTriggerEnter(Collider other)
->>>>>>> Stashed changes:Assets/Scripts/Enemy/EnemyStats.cs
-=======
-    /*private void OnTriggerEnter(Collider other)
->>>>>>> Stashed changes
-=======
-    /*private void OnTriggerEnter(Collider other)
->>>>>>> Stashed changes
-=======
-    /*private void OnTriggerEnter(Collider other)
->>>>>>> Stashed changes
      {
          BulletStats bullet = other.GetComponent<BulletStats>();
 
@@ -56,23 +33,13 @@ public class EnemyStats : MonoBehaviour
     {
         Debug.Log($"I AM HIT");
             TakeDamage(20);
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:Assets/Scripts/Enemies/EnemyStats.cs
         
     } 
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
-    }*/
 
-    /* void OnTriggerEnter2D(Collider2D other) // Use OnCollisionEnter2D for non-trigger colliders
+    }
+
+    void OnTriggerEnter2D(Collider2D other) // Use OnCollisionEnter2D for non-trigger colliders
      {
          Debug.Log("OnTriggerEnter2D detected");
          if (other.CompareTag("Bullet")) // Make sure your bullet has the tag "Bullet"
@@ -82,16 +49,6 @@ public class EnemyStats : MonoBehaviour
              Destroy(other.gameObject); // Destroy the bullet on impact
          }
      }*/
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes:Assets/Scripts/Enemy/EnemyStats.cs
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
     public void TakeDamage(float damage)
     {
@@ -136,4 +93,5 @@ public class EnemyStats : MonoBehaviour
         enemyDamage += damageIncrease;
         Debug.Log($"Enemy stats updated: Health = {enemyHealth}, Damage = {enemyDamage}");
     }
+
 }
