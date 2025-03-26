@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class EBullet : MonoBehaviour
 {
-    
     public float bulletLife = 1f;  // Defines how long before the bullet is destroyed
     public float rotation = 0f;
     public float speed = 1f;
 
     private Vector2 spawnPoint;
     private float timer = 0f;
+
+    public BulletStats bulletStats;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,5 +31,17 @@ public class EBullet : MonoBehaviour
         float x = timer * speed * transform.right.x;
         float y = timer * speed * transform.right.y;
         return new Vector2(x + spawnPoint.x, y + spawnPoint.y);
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            EnemyStats enemy = other.GetComponent<EnemyStats>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(bulletStats.GetDamage());
+            }
+            Destroy(gameObject); // Destroy bullet on impact
+        }
     }
 }

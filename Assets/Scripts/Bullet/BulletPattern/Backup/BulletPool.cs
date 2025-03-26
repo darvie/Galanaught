@@ -15,7 +15,6 @@ public class BulletPool : MonoBehaviour
     {
         BulletPoolInstance = this;
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         bullets = new List<GameObject>();
@@ -43,9 +42,5 @@ public class BulletPool : MonoBehaviour
         return null;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
