@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1495096471721865358}
   - component: {fileID: -6022437091930276792}
   - component: {fileID: -3704083092540423084}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Missle
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -120,6 +120,7 @@ MonoBehaviour:
   bulletLife: 5
   rotation: 1
   speed: 5
+  bulletStats: {fileID: 0}
 --- !u!50 &-6022437091930276792
 Rigidbody2D:
   serializedVersion: 5

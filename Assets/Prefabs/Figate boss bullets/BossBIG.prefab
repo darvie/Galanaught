@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1495096471721865358}
   - component: {fileID: 5866327673015410830}
   - component: {fileID: 6668449667796446698}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BossBIG
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -120,6 +120,7 @@ MonoBehaviour:
   bulletLife: 5
   rotation: 1
   speed: 5
+  bulletStats: {fileID: 0}
 --- !u!61 &5866327673015410830
 BoxCollider2D:
   m_ObjectHideFlags: 0
