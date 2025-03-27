@@ -15,6 +15,10 @@ public class BulletMovement : MonoBehaviour
             other.gameObject.GetComponent<EnemyStats>().TakeDamage(10);
             Destroy(gameObject);
         }
+
+        if (other.gameObject.CompareTag("Wall")){
+            Destroy(gameObject);
+        }
     }
     void Update()
     {

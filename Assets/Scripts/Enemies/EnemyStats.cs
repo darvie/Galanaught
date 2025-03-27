@@ -36,7 +36,7 @@ public class EnemyStats : MonoBehaviour
 
 
 
-    public void IncreaseStats(float healthIncrease, float damageIncrease)
+    public void IncreaseStats(float healthIncrease)
     {
         enemyHealth += healthIncrease;
         Debug.Log($"Enemy stats updated: Health = {enemyHealth}");

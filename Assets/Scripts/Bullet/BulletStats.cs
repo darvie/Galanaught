@@ -20,19 +20,21 @@ public class BulletStats : MonoBehaviour
 
     }
 
-   /* private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        Debug.Log($"collided with{other.gameObject.name}");
+        if (other.gameObject.CompareTag("Player"))
         {
-            EnemyStats enemyHealth = collision.gameObject.GetComponent<EnemyStats>();
-            if (enemyHealth != null)
-            {
-                enemyHealth.TakeDamage(damage);
-            }
 
-            Destroy(gameObject); // Destroy the bullet after impact
+            other.gameObject.GetComponent<PlayerController>().LooseHP();
+            Destroy(gameObject);
         }
-    }*/
+
+        if (other.gameObject.CompareTag("wall"))
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Update is called once per frame
     void Update()

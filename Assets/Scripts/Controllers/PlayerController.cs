@@ -1,10 +1,12 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] public int LifeCounter = 3;
 
     public float fireDelay = 0.1f;
     private float cooldownTimer = 0;
@@ -16,6 +18,7 @@ public class PlayerController : MonoBehaviour
         inputManager.OnFire.AddListener(PlayerShoot);
         cooldownTimer -= Time.deltaTime;
         rb = GetComponent<Rigidbody2D>();
+        
     }
 
     void Update()
@@ -30,6 +33,22 @@ public class PlayerController : MonoBehaviour
     private void MovePlayer(Vector2 direction)
     { 
         rb.linearVelocity = direction * speed;
+    }
+
+    public void LooseHP()
+    {
+        LifeCounter -= 1;
+
+        if (LifeCounter <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Player defeated!");
+        Destroy(gameObject); // Destroy player when Lives reaches zero
     }
 
     private void PlayerShoot()

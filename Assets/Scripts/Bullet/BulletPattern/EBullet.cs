@@ -31,4 +31,20 @@ public class EBullet : MonoBehaviour
         float y = timer * speed * transform.right.y;
         return new Vector2(x + spawnPoint.x, y + spawnPoint.y);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log($"collided with{other.gameObject.name}");
+        if (other.gameObject.CompareTag("Player"))
+        {
+
+            other.gameObject.GetComponent<PlayerController>().LooseHP();
+            Destroy(gameObject);
+        }
+
+        if (other.gameObject.CompareTag("wall"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
