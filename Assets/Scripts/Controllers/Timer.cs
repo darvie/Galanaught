@@ -3,7 +3,6 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     [Header("Scripts")]
-    public BulletStats bulletStats;
     public EnemyStats enemyStats;
 
 
@@ -13,7 +12,6 @@ public class Timer : MonoBehaviour
 
     [Header("Enemy Stats")]
     public float HealthInc = 10f;
-    public float DamageInc = 2f;
 
     [Header("Bullet Damage")]
     public float BDamge = 2f;
@@ -24,14 +22,9 @@ public class Timer : MonoBehaviour
         {
             enemyStats = FindFirstObjectByType<EnemyStats>();  // Auto-find the script if not set
         }
-        if (bulletStats == null)
-        {
-            bulletStats = FindFirstObjectByType<BulletStats>(); // Auto-find the script if not assigned
-        }
 
         // Start the scaling loop
         InvokeRepeating(nameof(IncrementStats), timer, incrementInterval);
-        InvokeRepeating(nameof(IncrimentBullet), timer, incrementInterval);
     }
 
     // Method to increment enemy health and damage
@@ -39,16 +32,10 @@ public class Timer : MonoBehaviour
     {
         if (enemyStats != null)
         {
-            enemyStats.IncreaseStats(HealthInc, DamageInc);
+            enemyStats.IncreaseStats(HealthInc);
         }
 
         // Optional: Print the updated stats to the console
         Debug.Log("Enemy Health: " + enemyStats.enemyHealth);
-        Debug.Log("Enemy Damage: " + enemyStats.enemyDamage);
-    }
-
-    void IncrimentBullet()
-    {
-        bulletStats.IncreaseDamage(BDamge);
     }
 }

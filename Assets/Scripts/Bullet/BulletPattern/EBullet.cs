@@ -22,6 +22,7 @@ public class EBullet : MonoBehaviour
         if (timer > bulletLife) Destroy(this.gameObject);
         timer += Time.deltaTime;
         transform.position = Movement(timer);
+        
     }
 
     private Vector2 Movement(float timer)
@@ -30,5 +31,19 @@ public class EBullet : MonoBehaviour
         float x = timer * speed * transform.right.x;
         float y = timer * speed * transform.right.y;
         return new Vector2(x + spawnPoint.x, y + spawnPoint.y);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log($"collided with{other.gameObject.name}");
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerController>().LooseHP();
+        }
+
+        if (other.gameObject.CompareTag("wall"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

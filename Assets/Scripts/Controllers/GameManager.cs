@@ -7,7 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class GameManager : SingletonMonoBehavior<GameManager>
 {
     [SerializeField] private int maxLives = 3;
-    [SerializeField] private Bullet bullet;
+//
     [SerializeField] private Transform bricksContainer;
     [SerializeField] private LifeCounter lifecounter;
     [SerializeField] private int point = 0;
@@ -38,7 +38,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
 
     }
 
-    private void OnEnable()
+   /* private void OnEnable()
     {
         InputManager.Instance.OnFire.AddListener(FireBullet);
         //bullet.ResetBullet();
@@ -54,7 +54,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
     private void FireBullet()
     {
         bullet.FireBullet();
-    }
+    }*/
 
     public void SaveGame()
     {
