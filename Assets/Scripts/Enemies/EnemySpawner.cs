@@ -8,9 +8,9 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float MaxSpawnTimer;
     private float TimetilSpawn;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        
+        SetSpawnTime();
         
     }
 
