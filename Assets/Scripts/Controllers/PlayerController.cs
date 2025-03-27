@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
     public void LooseHP()
     {
         LifeCounter -= 1;
+        Debug.Log("Player Hit!");
 
         if (LifeCounter <= 0)
         {

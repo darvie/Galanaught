@@ -22,6 +22,7 @@ public class EBullet : MonoBehaviour
         if (timer > bulletLife) Destroy(this.gameObject);
         timer += Time.deltaTime;
         transform.position = Movement(timer);
+        
     }
 
     private Vector2 Movement(float timer)
@@ -37,9 +38,7 @@ public class EBullet : MonoBehaviour
         Debug.Log($"collided with{other.gameObject.name}");
         if (other.gameObject.CompareTag("Player"))
         {
-
             other.gameObject.GetComponent<PlayerController>().LooseHP();
-            Destroy(gameObject);
         }
 
         if (other.gameObject.CompareTag("wall"))
