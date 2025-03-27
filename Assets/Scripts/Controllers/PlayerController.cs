@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     {
         if (cooldownTimer <= 0)
         {
-            Vector3 offset = new Vector3(0, 0.5f, 0);
+            Vector3 offset = new Vector3(0, 1f, 0);
 
             Debug.Log("Pew!");
             Instantiate(bulletPrefab, transform.position + offset, transform.rotation);

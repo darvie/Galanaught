@@ -44,7 +44,6 @@ public class Timer : MonoBehaviour
 
         // Optional: Print the updated stats to the console
         Debug.Log("Enemy Health: " + enemyStats.enemyHealth);
-        Debug.Log("Enemy Damage: " + enemyStats.enemyDamage);
     }
 
     void IncrimentBullet()
