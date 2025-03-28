@@ -41,7 +41,7 @@ public class EBullet : MonoBehaviour
             other.gameObject.GetComponent<PlayerController>().LooseHP();
         }
 
-        if (other.gameObject.CompareTag("wall"))
+        if (other.gameObject.CompareTag("Wall"))
         {
             Destroy(gameObject);
         }
