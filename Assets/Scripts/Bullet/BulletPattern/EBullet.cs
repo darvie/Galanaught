@@ -23,6 +23,7 @@ public class EBullet : MonoBehaviour
         if (timer > bulletLife) Destroy(this.gameObject);
         timer += Time.deltaTime;
         transform.position = Movement(timer);
+        
     }
 
     private Vector2 Movement(float timer)
@@ -32,16 +33,18 @@ public class EBullet : MonoBehaviour
         float y = timer * speed * transform.right.y;
         return new Vector2(x + spawnPoint.x, y + spawnPoint.y);
     }
-    void OnTriggerEnter2D(Collider2D other)
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        Debug.Log($"collided with{other.gameObject.name}");
+        if (other.gameObject.CompareTag("Player"))
         {
-            EnemyStats enemy = other.GetComponent<EnemyStats>();
-            if (enemy != null)
-            {
-                enemy.TakeDamage(bulletStats.GetDamage());
-            }
-            Destroy(gameObject); // Destroy bullet on impact
+            other.gameObject.GetComponent<PlayerController>().LooseHP();
+        }
+
+        if (other.gameObject.CompareTag("wall"))
+        {
+            Destroy(gameObject);
         }
     }
 }

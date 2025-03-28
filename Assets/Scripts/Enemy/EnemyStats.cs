@@ -4,51 +4,14 @@ using System;
 using NUnit.Framework;
 using System.Collections.Generic;
 
-public class EnemyStats : MonoBehaviour
+public class EnemyStats : MonoBehavior
 {
     [Header("Enemy Stats")]
     public float enemyHealth = 100f;   // Initial health of the enemy
-    public float enemyDamage = 10f;    // Initial damage of the enemy
-
-    //LootTable
+ 
+ //LootTable
     [Header("PowerUp")]
     public List<PowerUp> lootTable = new List<PowerUp>();
-
-
-    /*private void OnTriggerEnter(Collider other)
-
-     {
-         BulletStats bullet = other.GetComponent<BulletStats>();
-
-
-         if (bullet != null)
-         {
-             Debug.Log($"I WAS HIT");
-             TakeDamage(bullet.damage);
-             Destroy(other.gameObject); // Destroy the bullet after collision
-         }
-     } */
-
-    /*public void OnCollisionEnter(Collision other)
-    {
-        Debug.Log($"I AM HIT");
-            TakeDamage(20);
-        
-    } 
-
-
-    }
-
-    void OnTriggerEnter2D(Collider2D other) // Use OnCollisionEnter2D for non-trigger colliders
-     {
-         Debug.Log("OnTriggerEnter2D detected");
-         if (other.CompareTag("Bullet")) // Make sure your bullet has the tag "Bullet"
-         {
-             TakeDamage();
-             TakeDamage(20);
-             Destroy(other.gameObject); // Destroy the bullet on impact
-         }
-     }*/
 
     public void TakeDamage(float damage)
     {
@@ -87,11 +50,10 @@ public class EnemyStats : MonoBehaviour
         Instantiate(powerUp);
     }
 
-    public void IncreaseStats(float healthIncrease, float damageIncrease)
+    public void IncreaseStats(float healthIncrease)
     {
         enemyHealth += healthIncrease;
-        enemyDamage += damageIncrease;
-        Debug.Log($"Enemy stats updated: Health = {enemyHealth}, Damage = {enemyDamage}");
+        Debug.Log($"Enemy stats updated: Health = {enemyHealth}");
     }
 
 }
