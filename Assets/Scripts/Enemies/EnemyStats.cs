@@ -6,6 +6,9 @@ public class EnemyStats : MonoBehaviour
     [Header("Enemy Stats")]
     public float enemyHealth = 100f;   // Initial health of the enemy
 
+    [Header("Enemy Sprites")]
+    public Sprite Dead;
+
     public void TakeDamage(float damage)
     {
         enemyHealth -= damage;
@@ -19,7 +22,9 @@ public class EnemyStats : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy defeated!");
-        Destroy(gameObject); // Destroy enemy when health reaches zero
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = Dead;
+        this.gameObject.GetComponent<EnemyStats>().enabled = false;
+        Destroy(gameObject, 5f); // Destroy enemy when health reaches zero
     }
 
 

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class PlayerController : MonoBehaviour
 
     public float fireDelay = 0.1f;
     private float cooldownTimer = 0;
+
+    [Header("Sprites")]
+    public Sprite Damaged;
+    public Sprite Dead;
+    public Sprite Invulnerability;
 
     public GameObject bulletPrefab;
     void Start()
@@ -39,17 +45,35 @@ public class PlayerController : MonoBehaviour
     {
         LifeCounter -= 1;
         Debug.Log("Player Hit!");
-
-        if (LifeCounter <= 0)
+        if (LifeCounter == 2)
         {
+            //Invuln();
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Damaged;
+            Debug.Log("DAMAGE SPRITE!");
+
+        }
+        else if (LifeCounter <= 0)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Dead;
+            Debug.Log("DEATH SPRITE!");
             Die();
         }
+    }
+
+    IEnumerator Invuln()
+    {
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = Invulnerability;
+        this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        yield return new WaitForSeconds(4);
+        this.gameObject.GetComponent<CircleCollider2D>().enabled = true;
     }
 
     void Die()
     {
         Debug.Log("Player defeated!");
-        Destroy(gameObject); // Destroy player when Lives reaches zero
+        this.gameObject.GetComponent<PlayerController>().enabled = false;
+        Destroy(gameObject,3f); // Destroy player when Lives reaches zero
+
     }
 
     private void PlayerShoot()
