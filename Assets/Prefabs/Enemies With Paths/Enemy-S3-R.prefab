@@ -972,9 +972,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: {fileID: 2284202268236980533, guid: 708079c1316df2f4d8905a3494b8377c, type: 3}
-  enemyHealth: 40
+  enemyHealth: 0
   HealthInc: 10
-  DeathAnim: 5
+  DeathAnim: 1
   KillTime: 50
   Dead: {fileID: 0}
   incrementInterval: 10

@@ -9,7 +9,7 @@ public class EnemyStats : MonoBehaviour
     public GameObject Health;
 
     [Header("Enemy Stats")]
-    public float enemyHealth = 40f;   // Initial health of the enemy
+    public float enemyHealth = 10f;   // Initial health of the enemy
     public float HealthInc = 10f;
     public float DeathAnim = 5f;
     public float KillTime = 50f;
