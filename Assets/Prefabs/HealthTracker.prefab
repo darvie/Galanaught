@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3017342030273865371}
   - component: {fileID: 1121052918539566845}
   m_Layer: 0
-  m_Name: TIMER
+  m_Name: HealthTracker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc4407a02c339b41a64b8e9a5a3cfae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStats: {fileID: 0}
-  incrementInterval: 60
+  TotalHP: 40
   HealthInc: 10
-  DamageInc: 2
+  incrementInterval: 5
+  Counter: 0
