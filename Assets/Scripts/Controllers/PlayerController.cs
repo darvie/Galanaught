@@ -1,5 +1,8 @@
 using UnityEngine;
 using System.Collections;
+using UnityEditor.ShaderGraph;
+using System;
+using System.Data;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,8 +15,17 @@ public class PlayerController : MonoBehaviour
     private float cooldownTimer = 0;
 
     public GameObject bulletPrefab;
+
+    [Header("Sprites")]
+    public Sprite Death;
+    public Sprite Damaged;
+    public Sprite Norm;
+    public Sprite Invuln;
+    private SpriteRenderer SpriteRenderer;
     void Start()
     {
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+
         inputManager.OnMove.AddListener(MovePlayer);
         inputManager.OnFire.AddListener(PlayerShoot);
         cooldownTimer -= Time.deltaTime;
@@ -39,17 +51,28 @@ public class PlayerController : MonoBehaviour
     {
         LifeCounter -= 1;
         Debug.Log("Player Hit!");
+        if(LifeCounter == 2)
+        {
+            StateChange();
+            Debug.Log("Changed to Damaged Sprite");
 
-        if (LifeCounter <= 0)
+        }
+        else if (LifeCounter <= 0)
         {
             Die();
+            Debug.Log("Changed to Death Sprite");
+        }
+        else
+        {
+            SpriteRenderer.sprite = Norm;
         }
     }
 
     void Die()
     {
         Debug.Log("Player defeated!");
-        Destroy(gameObject); // Destroy player when Lives reaches zero
+        StateChange();
+        Destroy(gameObject, 1f); // Destroy player when Lives reaches zero
     }
 
     private void PlayerShoot()
@@ -66,4 +89,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void StateChange()
+    {
+        if (LifeCounter == 2)
+        {
+            SpriteRenderer.sprite = Damaged;
+
+        }
+        else if (LifeCounter <= 0)
+        {
+            SpriteRenderer.sprite = Damaged;
+        }
+        else
+        {
+            SpriteRenderer.sprite = Norm;
+        }
+
+    }
 }
