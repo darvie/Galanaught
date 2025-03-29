@@ -27,9 +27,10 @@ public class ScoreCounterUI : MonoBehaviour
 
     public void UpdatePoint(int point)
     {
+        Debug.Log("Updating UI Point to: " + point); // Verify this is reached
         toUpdate.SetText($"{point}");
-        ScoreTextContainer.DOLocalMoveY(containerInitPosition + moveAmount, duration).SetEase(animationCurve);
-        StartCoroutine(ResetPointContainer(point));
+     //   ScoreTextContainer.DOLocalMoveY(containerInitPosition + moveAmount, duration).SetEase(animationCurve);
+       // StartCoroutine(ResetPointContainer(point));
     }
 
     private IEnumerator ResetPointContainer(int point)
@@ -38,8 +39,6 @@ public class ScoreCounterUI : MonoBehaviour
         current.SetText($"{point}");
         Vector3 localPosition = ScoreTextContainer.localPosition;
         ScoreTextContainer.localPosition = new Vector3(localPosition.x, containerInitPosition, localPosition.z);
-
-
 
     }
 }
