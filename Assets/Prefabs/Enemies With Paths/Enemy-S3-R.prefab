@@ -971,7 +971,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e14c36ea65bd20c468e20d9bee6e329c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: {fileID: 2284202268236980533, guid: 708079c1316df2f4d8905a3494b8377c, type: 3}
   enemyHealth: 40
+  HealthInc: 10
+  DeathAnim: 5
+  KillTime: 50
+  Dead: {fileID: 0}
+  incrementInterval: 10
+  Counter: 0
 --- !u!114 &4352060126720055612
 MonoBehaviour:
   m_ObjectHideFlags: 0

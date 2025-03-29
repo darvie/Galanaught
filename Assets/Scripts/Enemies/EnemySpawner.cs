@@ -11,7 +11,6 @@ public class EnemySpawner : MonoBehaviour
     void Awake()
     {
         SetSpawnTime();
-        
     }
 
     // Update is called once per frame

@@ -1,14 +1,48 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class EnemyStats : MonoBehaviour
 {
+
+    [Header("Scripts")]
+    public GameObject Health;
+
     [Header("Enemy Stats")]
-    public float enemyHealth = 100f;   // Initial health of the enemy
+    public float enemyHealth = 40f;   // Initial health of the enemy
+    public float HealthInc = 10f;
+    public float DeathAnim = 5f;
+    public float KillTime = 50f;
 
     [Header("Enemy Sprites")]
     public Sprite Dead;
 
+    [Header("Timer Incriments")]
+    public float incrementInterval = 10f;  // Time interval to increment stats (1 minute)
+    public float Counter;
+
+    public void Start()
+    {
+        enemyHealth  += Health.GetComponent<HealthTracker>().TotalHP;
+        StartCoroutine(AutoKill());
+    }
+
+    IEnumerator AutoKill()
+    {
+        yield return new WaitForSeconds(KillTime);
+        Die();
+    }
+
+    public void Update()
+    {
+        Counter += Time.deltaTime;
+
+        if (Counter >= incrementInterval)
+        {
+
+            UpdateHealth();
+        }
+    }
     public void TakeDamage(float damage)
     {
         enemyHealth -= damage;
@@ -24,15 +58,17 @@ public class EnemyStats : MonoBehaviour
         Debug.Log("Enemy defeated!");
         this.gameObject.GetComponent<SpriteRenderer>().sprite = Dead;
         this.gameObject.GetComponent<EnemyStats>().enabled = false;
-        Destroy(gameObject, 5f); // Destroy enemy when health reaches zero
+        Destroy(gameObject, DeathAnim); // Destroy enemy when health reaches zero
     }
 
 
-
-    public void IncreaseStats(float healthIncrease)
+    
+    public void UpdateHealth()
     {
-        enemyHealth += healthIncrease;
-        Debug.Log($"Enemy stats updated: Health = {enemyHealth}");
+            enemyHealth += HealthInc;
+            Counter = 0;
+            Debug.Log($"Enemy stats updated: Health = {enemyHealth}");
+        
     }
 
 }
