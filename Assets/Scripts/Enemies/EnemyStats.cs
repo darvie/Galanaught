@@ -19,6 +19,7 @@ public class EnemyStats : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy defeated!");
+        KillCounterManager.Instance.IncreaseKillCount();
         Destroy(gameObject); // Destroy enemy when health reaches zero
     }
 
