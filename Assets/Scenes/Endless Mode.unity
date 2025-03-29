@@ -552,30 +552,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
---- !u!1 &768934755
-GameObject:
-=======
-=======
->>>>>>> 6f9f177d709b9a89975fb38a3ec9a0c4bba7724a
---- !u!1 &722373742 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4914883482910874891, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
-  m_PrefabInstance: {fileID: 6401375268439448484}
-  m_PrefabAsset: {fileID: 0}
 --- !u!61 &722373746
 BoxCollider2D:
 <<<<<<< HEAD
 >>>>>>> origin/GamePlay-Refinement
-=======
---- !u!1 &768934755
-GameObject:
->>>>>>> 6f9f177d709b9a89975fb38a3ec9a0c4bba7724a
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
   m_GameObject: {fileID: 722373742}
   m_Enabled: 1
@@ -636,7 +616,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768934755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -655,7 +634,6 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768934755}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -746,7 +724,6 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768934755}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
 =======
