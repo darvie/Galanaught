@@ -56,6 +56,7 @@ public class EnemyStats : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy defeated!");
+
         this.gameObject.GetComponent<SpriteRenderer>().sprite = Dead;
         this.gameObject.GetComponent<EnemyStats>().enabled = false;
         Destroy(gameObject, DeathAnim); // Destroy enemy when health reaches zero

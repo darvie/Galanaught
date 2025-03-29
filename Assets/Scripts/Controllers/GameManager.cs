@@ -7,14 +7,8 @@ using UnityEngine.SocialPlatforms.Impl;
 public class GameManager : SingletonMonoBehavior<GameManager>
 {
     [SerializeField] private int maxLives = 3;
-//
-    [SerializeField] private Transform bricksContainer;
     [SerializeField] private LifeCounter lifecounter;
     [SerializeField] private int point = 0;
-    [SerializeField] private ScoreCounterUI scoreCounter;
-
-    private int currentBrickCount;
-    private int totalBrickCount;
     private int currentLives;
 
     public GameObject gameOverPanel;
@@ -27,12 +21,12 @@ public class GameManager : SingletonMonoBehavior<GameManager>
         currentLives = PlayerPrefs.GetInt("Lives", maxLives);  // Default to maxLives if not set
         point = PlayerPrefs.GetInt("Score", 0);
         lifecounter.UpdateLife(currentLives);
-        scoreCounter.UpdatePoint(point);
+      //  scoreCounter.UpdatePoint(point);
     }
     public void IncreasePoint()
     {
         point++;
-        scoreCounter.UpdatePoint(point);
+      //  scoreCounter.UpdatePoint(point);
         Debug.Log("Score: " + point);
         SaveGame();
 
@@ -62,14 +56,6 @@ public class GameManager : SingletonMonoBehavior<GameManager>
         PlayerPrefs.SetInt("Lives", currentLives);
         PlayerPrefs.SetInt("Score", point);
         PlayerPrefs.Save();
-    }
-
-    public void OnBrickDestroyed(Vector3 position)
-    {
-
-        currentBrickCount--;
-        Debug.Log($"Destroyed Brick at {position}, {currentBrickCount}/{totalBrickCount} remaining");
-        if (currentBrickCount == 0) SceneHandler.Instance.LoadNextScene();
     }
 
     public void KillBullet()
