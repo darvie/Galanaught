@@ -39,6 +39,7 @@ public class EnemyStats : MonoBehaviour
     {
         Debug.Log("Enemy defeated!");
         Destroy(gameObject); // Destroy enemy when health reaches zero
+        GameManager.Instance.IncreasePoint();
     }
 
 
