@@ -5,8 +5,12 @@ public class InputManager : SingletonMonoBehavior<InputManager>
 {
     public UnityEvent<Vector2> OnMove = new UnityEvent<Vector2>();
     public UnityEvent OnFire;
+    private PauseMenu pauseMenu;
 
-
+    private void Start()
+    {
+        pauseMenu = FindObjectOfType<PauseMenu>();
+    }
     void Update()
     {
         Vector2 input = Vector2.zero;
@@ -18,6 +22,12 @@ public class InputManager : SingletonMonoBehavior<InputManager>
                 AudioManager.Instance.PlayLaserSFX();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            pauseMenu.TogglePause(); 
+        }
+
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             input += Vector2.up;
