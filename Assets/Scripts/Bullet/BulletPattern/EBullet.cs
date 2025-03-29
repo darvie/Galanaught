@@ -39,6 +39,7 @@ public class EBullet : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<PlayerController>().LooseHP();
+            other.gameObject.GetComponent<PlayerController>().StateChange();
         }
 
         if (other.gameObject.CompareTag("Wall"))

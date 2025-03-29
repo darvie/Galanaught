@@ -1641,9 +1641,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1268717116}
     - target: {fileID: 7044305805618679985, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
+      propertyPath: Norm
+      value: 
+      objectReference: {fileID: 6226228523178072217, guid: 1c6762dcee381bd47a9424bfb1e74d0c, type: 3}
+    - target: {fileID: 7044305805618679985, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
+      propertyPath: Death
+      value: 
+      objectReference: {fileID: -9096396444699361508, guid: c08077408dd681748a277f7f9c9a7760, type: 3}
+    - target: {fileID: 7044305805618679985, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
       propertyPath: speed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7044305805618679985, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
+      propertyPath: Invuln
+      value: 
+      objectReference: {fileID: 3066962688185937846, guid: 981fae5c02f2592478f3c4ec7a635019, type: 3}
+    - target: {fileID: 7044305805618679985, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
+      propertyPath: Damaged
+      value: 
+      objectReference: {fileID: 5876141782181964057, guid: 6f5a487bd5ecbd84195ff2bd48ae5576, type: 3}
     - target: {fileID: 7044305805618679985, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
       propertyPath: inputManager
       value: 

@@ -6,12 +6,16 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject _enemyPrefab;
     [SerializeField] private float MinSpawnTimer;
     [SerializeField] private float MaxSpawnTimer;
+
+    int enemyCount;
+
     private float TimetilSpawn;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         SetSpawnTime();
-        
+        //enemyCount = FindObjectsOfType<EnemyStats>().Length;
+
     }
 
     // Update is called once per frame

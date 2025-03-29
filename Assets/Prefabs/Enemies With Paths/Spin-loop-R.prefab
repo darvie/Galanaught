@@ -2828,6 +2828,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 30
+  TotalHealth: 30
+  LifeSpan: 15
+  Death: {fileID: 0}
 --- !u!114 &7249350857787707104
 MonoBehaviour:
   m_ObjectHideFlags: 0
