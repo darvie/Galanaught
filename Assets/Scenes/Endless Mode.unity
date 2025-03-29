@@ -1581,6 +1581,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4914883482910874891, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
+      propertyPath: m_TagString
+      value: no touchy
+      objectReference: {fileID: 0}
     - target: {fileID: 7044305805618679985, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
       propertyPath: rb
       value: 
@@ -1632,8 +1636,62 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4914883482910874891, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6401375268439448486}
   m_SourcePrefab: {fileID: 100100000, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
+--- !u!1 &6401375268439448485 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4914883482910874891, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
+  m_PrefabInstance: {fileID: 6401375268439448484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &6401375268439448486
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6401375268439448485}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.075}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: -0.18181819}
+    oldSize: {x: 0.22, y: 0.11}
+    newSize: {x: 0.22, y: 0.11}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.22, y: 0.10999999}
+  m_EdgeRadius: 0
 --- !u!1001 &7233790651319995384
 PrefabInstance:
   m_ObjectHideFlags: 0
