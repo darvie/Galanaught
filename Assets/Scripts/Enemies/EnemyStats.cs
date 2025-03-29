@@ -1,10 +1,24 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Rendering;
 
 public class EnemyStats : MonoBehaviour
 {
     [Header("Enemy Stats")]
     public float enemyHealth = 100f;   // Initial health of the enemy
+    public float TotalHealth = 0f;
+
+
+    [Header("Enemy Lifespan")]
+    public float LifeSpan = 5f;
+
+    [Header("Sprite Change")]
+    public Sprite Death;
+
+    public void Start()
+    {
+        LifeTime();
+    }
 
     public void TakeDamage(float damage)
     {
@@ -15,6 +29,11 @@ public class EnemyStats : MonoBehaviour
         {
             Die();
         }
+    }
+
+    public void LifeTime()
+    {
+        Destroy(gameObject, LifeSpan); // Destroy enemy after certain time in sec
     }
     void Die()
     {
