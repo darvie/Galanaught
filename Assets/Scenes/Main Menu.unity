@@ -1280,7 +1280,7 @@ MonoBehaviour:
   defeatMusic: {fileID: 8300000, guid: db77f89f722c4d940b86421dc685e80c, type: 3}
   levelUpMusic: {fileID: 8300000, guid: e53dce921d2e59b48b883afa2ce8d78c, type: 3}
   laserBulletSFX: {fileID: 8300000, guid: bb2ae6baaef07274dbf6cd1d3272ea02, type: 3}
-  explosionSFX: {fileID: 8300000, guid: 7db6d8035b5174e4bb6867ac1ef3c5db, type: 3}
+  explosionSFX: {fileID: 8300000, guid: b9c9432ed54c6f1438f702a04a04bce3, type: 3}
 --- !u!4 &363769899
 Transform:
   m_ObjectHideFlags: 0

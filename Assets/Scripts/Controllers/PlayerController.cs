@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
 
     public GameObject gameOverPanel;
+    public AudioManager AudioManager;
 
     [Header("Player Stats")]
     [SerializeField] private float speed;
@@ -98,6 +99,7 @@ public class PlayerController : MonoBehaviour
 
             cooldownTimer = fireDelay; // Reset the cooldown timer
             Debug.Log("Cooldown reset to: " + cooldownTimer);
+            AudioManager.PlayLaserBulletSFX();
         }
     }
 

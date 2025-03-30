@@ -8,10 +8,12 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     [SerializeField] public AudioClip[] bossBattleMusic;
     [SerializeField] public AudioClip[] mainMenuMusic;
     [SerializeField] public AudioClip[] gameplayMusic;
-    [SerializeField] public AudioClip defeatMusic;
+    [SerializeField] public AudioClip defeatMusic; //Defeat Defeated
     [SerializeField] public AudioClip levelUpMusic;
-    [SerializeField] public AudioClip laserBulletSFX;
-    [SerializeField] public AudioClip explosionSFX;
+    [SerializeField] public AudioClip laserBulletSFX; //Bullet SFX SFX_15c
+    [SerializeField] public AudioClip BulletSFX; //Bullet-Explosion-PowerUpSFX Shoot
+    [SerializeField] public AudioClip explosionSFX; //SFX- The Ultiomate 2017 16 bit mini Pack Explosion2 007 Wav
+    [SerializeField] public AudioClip BossExplosionSFX;//Bullet-Explosion-PowerUpSFX Die
 
     private int currentTrackIndex = 0; 
     private AudioClip[] currentPlaylist; 
@@ -54,12 +56,25 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
         musicSource.Play();
     }
 
-    public void PlayLaserSFX() {
+    public void PlayLaserBulletSFX() {
 
         if (sfxSource == null || laserBulletSFX == null) return;
         sfxSource.PlayOneShot(laserBulletSFX);
     }
+    public void PlayBulletSFX()
+    {
+
+        if (sfxSource == null || laserBulletSFX == null) return;
+        sfxSource.PlayOneShot(laserBulletSFX);
+    }
+
     public void PlayExplosionSFX()
+    {
+
+        if (sfxSource == null || explosionSFX == null) return;
+        sfxSource.PlayOneShot(explosionSFX);
+    }
+    public void PlayBossExplosionSFX()
     {
 
         if (sfxSource == null || explosionSFX == null) return;
