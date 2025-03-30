@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 673070311757191662}
   - component: {fileID: 981977144266078771}
   - component: {fileID: 7800373428629117015}
-  - component: {fileID: 5867142242660720340}
+  - component: {fileID: 4042545983241742424}
   m_Layer: 0
   m_Name: Pbullet
   m_TagString: Bullet
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.05323004, y: 0.124133095}
   m_EdgeRadius: 0
---- !u!114 &5867142242660720340
+--- !u!114 &4042545983241742424
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1652330136924185641}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6ef488e786c44b438b1415a10c513f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 890c63f269476584db6968dd8a4bfd3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletLife: 5

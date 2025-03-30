@@ -10,6 +10,7 @@ public class EnemyStats : MonoBehaviour
     public GameObject Health;
     public GameObject InvulnBuff;
     public GameObject MultiBuff;
+    public GameObject GigaBuff;
 
     [Header("Enemy Stats")]
     public float enemyHealth = 10f;   // Initial health of the enemy
@@ -24,6 +25,10 @@ public class EnemyStats : MonoBehaviour
 
     [Header("Death")]
     public GameObject Death;
+
+    [Header("PowerUp Bounds")]
+    public int Lower = 1;
+    public int Upper = 3;
 
     public void Start()
     {
@@ -60,7 +65,6 @@ public class EnemyStats : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy defeated!");
-
         this.gameObject.GetComponent<EnemyStats>().enabled = false;
         this.GetComponent<SpriteRenderer>().enabled = false;
         Death.SetActive(true);
@@ -71,7 +75,8 @@ public class EnemyStats : MonoBehaviour
 
     private void Drop()
     {
-        Pspawn += UnityEngine.Random.Range(1, 5);
+        Pspawn += UnityEngine.Random.Range(1, 9);
+        Debug.Log("Number Generated!");
 
         //Pspawn += 1; Test Value
 
@@ -79,9 +84,13 @@ public class EnemyStats : MonoBehaviour
         {
             Instantiate(InvulnBuff, transform.position, Quaternion.identity);
         }
-        if (Pspawn == 5)
+        if (Pspawn == 2)
         {
             Instantiate(MultiBuff, transform.position, Quaternion.identity);
+        }
+        if (Pspawn == 3)
+        {
+            Instantiate(GigaBuff, transform.position, Quaternion.identity);
         }
 
     }

@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     [Header("Invuln Shield")]
     public GameObject Shield;
     public GameObject Guns;
+    public GameObject BFG10K;
 
     [Header("Bullet")]
     public GameObject bulletPrefab;
@@ -68,6 +69,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void GigaPowerUp()
+    {
+        StartCoroutine(GigaPower());
+    }
+
     public void InvulPowerUp()
     {
         StartCoroutine(Invuln());
@@ -78,6 +84,12 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(MultiShot());
     }
 
+    IEnumerator GigaPower()
+    {
+        BFG10K.SetActive(true);
+        yield return new WaitForSeconds(5);
+        BFG10K.SetActive(false);
+    }
     IEnumerator MultiShot()
     {
         Guns.SetActive(true);

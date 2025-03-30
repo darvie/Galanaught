@@ -3,6 +3,7 @@ using UnityEngine;
 public class PBullet : MonoBehaviour
 {
 
+
     public float bulletLife = 1f;  // Defines how long before the bullet is destroyed
     public float rotation = 0f;
     public float speed = 1f;
@@ -38,7 +39,7 @@ public class PBullet : MonoBehaviour
         //Debug.Log($"collided with{other.gameObject.name}");
         if (other.gameObject.CompareTag("Enemy"))
         {
-            other.gameObject.GetComponent<EnemyStats>().TakeDamage(10);
+            other.gameObject.GetComponent<EnemyStats>().TakeDamage(20);
         }
 
         if (other.gameObject.CompareTag("Wall"))
