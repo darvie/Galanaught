@@ -974,9 +974,8 @@ MonoBehaviour:
   Health: {fileID: 2284202268236980533, guid: 708079c1316df2f4d8905a3494b8377c, type: 3}
   enemyHealth: 0
   HealthInc: 10
-  DeathAnim: 1
+  DeathAnim: 0.75
   KillTime: 50
-  Dead: {fileID: 0}
   incrementInterval: 10
   Counter: 0
   Death: {fileID: 8682197552676675368}
@@ -1027,7 +1026,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
