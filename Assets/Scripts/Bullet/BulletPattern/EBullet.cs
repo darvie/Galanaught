@@ -35,7 +35,7 @@ public class EBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log($"collided with{other.gameObject.name}");
+        //Debug.Log($"collided with{other.gameObject.name}");
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<PlayerController>().LooseHP();

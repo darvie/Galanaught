@@ -23,7 +23,7 @@ public class EnemyStats : MonoBehaviour
 
     public void Start()
     {
-        enemyHealth  += Health.GetComponent<HealthTracker>().TotalHP;
+        enemyHealth += Health.GetComponent<HealthTracker>().TotalHP;
         StartCoroutine(AutoKill());
     }
 
@@ -63,13 +63,14 @@ public class EnemyStats : MonoBehaviour
     }
 
 
-    
+
     public void UpdateHealth()
     {
-            enemyHealth += HealthInc;
-            Counter = 0;
-            Debug.Log($"Enemy stats updated: Health = {enemyHealth}");
-        
-    }
+        enemyHealth += HealthInc;
+        Counter = 0;
+        Debug.Log($"Enemy stats updated: Health = {enemyHealth}");
 
+    }
 }
+
+
