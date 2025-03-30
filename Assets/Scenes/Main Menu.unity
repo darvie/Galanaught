@@ -1280,7 +1280,9 @@ MonoBehaviour:
   defeatMusic: {fileID: 8300000, guid: db77f89f722c4d940b86421dc685e80c, type: 3}
   levelUpMusic: {fileID: 8300000, guid: e53dce921d2e59b48b883afa2ce8d78c, type: 3}
   laserBulletSFX: {fileID: 8300000, guid: bb2ae6baaef07274dbf6cd1d3272ea02, type: 3}
+  BulletSFX: {fileID: 0}
   explosionSFX: {fileID: 8300000, guid: b9c9432ed54c6f1438f702a04a04bce3, type: 3}
+  BossExplosionSFX: {fileID: 0}
 --- !u!4 &363769899
 Transform:
   m_ObjectHideFlags: 0
@@ -2293,7 +2295,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: f4fc0701f75b72c4b85c3fedf6a82139, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

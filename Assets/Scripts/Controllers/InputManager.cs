@@ -24,7 +24,7 @@ public class InputManager : SingletonMonoBehavior<InputManager>
             OnFire?.Invoke();
             if (AudioManager.Instance != null)
             {
-                AudioManager.Instance.PlayLaserSFX();
+                AudioManager.Instance.PlayLaserBulletSFX();
             }
         }
 
