@@ -27,9 +27,9 @@ public class BFG : MonoBehaviour
     private Vector2 Movement(float timer)
     {
         // Moves right according to the bullet's rotation
-        float x = timer * speed * transform.right.x;
-        float y = timer * speed * transform.right.y;
-        return new Vector2(x + spawnPoint.x, y + spawnPoint.y);
+       // float x = timer * speed * transform.right.x;
+        float y = timer * speed * transform.up.y;
+        return new Vector2(spawnPoint.x, y + spawnPoint.y);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
