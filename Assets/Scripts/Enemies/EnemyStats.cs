@@ -84,11 +84,11 @@ public class EnemyStats : MonoBehaviour
         {
             Instantiate(InvulnBuff, transform.position, Quaternion.identity);
         }
-        if (Pspawn == 2)
+        if (Pspawn == 3)
         {
             Instantiate(MultiBuff, transform.position, Quaternion.identity);
         }
-        if (Pspawn == 3)
+        if (Pspawn == 6)
         {
             Instantiate(GigaBuff, transform.position, Quaternion.identity);
         }

@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
 
     public void InvulPowerUp()
     {
-        StartCoroutine(Invuln());
+        StartCoroutine(InvulnUP());
     }
 
     public void MultiPowerUp()
@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
     {
         Shield.SetActive(true);
         Physics2D.IgnoreLayerCollision(0,6,true);
-        Debug.Log("I AM GOD!");
+        //Debug.Log("I AM GOD!");
         yield return new WaitForSeconds(2);
         Physics2D.IgnoreLayerCollision(0, 6, false);
         Shield.SetActive(false);
@@ -109,9 +109,21 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    IEnumerator InvulnUP()
+    {
+        Shield.SetActive(true);
+        Physics2D.IgnoreLayerCollision(0, 6, true);
+        //Debug.Log("I AM GOD!");
+        yield return new WaitForSeconds(5);
+        Physics2D.IgnoreLayerCollision(0, 6, false);
+        Shield.SetActive(false);
+
+
+    }
+
     void Die()
     {
-        Debug.Log("Player defeated!");
+        //Debug.Log("Player defeated!");
 
         this.gameObject.GetComponent<PlayerController>().enabled = false;
         Destroy(gameObject,3f); // Destroy player when Lives reaches zero
@@ -124,7 +136,7 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 offset = new Vector3(0, 1f, 0);
 
-            Debug.Log("Pew!");
+            //Debug.Log("Pew!");
             Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
 
             cooldownTimer = fireDelay; // Reset the cooldown timer
