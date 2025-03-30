@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(Invuln());
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Damaged;
             Debug.Log("DAMAGE SPRITE!");
+            AudioManager.Instance.PlayPlayerHitSFX();
 
         }
         else if (LifeCounter <= 0)
@@ -80,11 +81,13 @@ public class PlayerController : MonoBehaviour
 
     void Die()
     {
+        AudioManager.Instance.PlayDefeatMusic();
         Debug.Log("Player defeated!");
         this.gameObject.GetComponent<PlayerController>().enabled = false;
         Destroy(gameObject,3f); // Destroy player when Lives reaches zero
         Time.timeScale = 0f;
         gameOverPanel.SetActive(true);
+        AudioManager.Instance.PlayDefeatMusic();
 
     }
 
@@ -99,7 +102,7 @@ public class PlayerController : MonoBehaviour
 
             cooldownTimer = fireDelay; // Reset the cooldown timer
             Debug.Log("Cooldown reset to: " + cooldownTimer);
-            AudioManager.PlayLaserBulletSFX();
+            AudioManager.Instance.PlayLaserBulletSFX();
         }
     }
 
