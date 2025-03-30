@@ -34,10 +34,12 @@ public class BFG : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log($"collided with{other.gameObject.name}");
+        Debug.Log($"BFG collided with{other.gameObject.name}");
         if (other.gameObject.CompareTag("Enemy"))
         {
+
             other.gameObject.GetComponent<EnemyStats>().TakeDamage(3000);
+            Destroy(gameObject);
         }
 
         if (other.gameObject.CompareTag("Wall"))
