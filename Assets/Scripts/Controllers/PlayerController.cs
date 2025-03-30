@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private InputManager inputManager;
     [SerializeField] private Rigidbody2D rb;
 
+    public GameObject gameOverPanel;
+
     [Header("Player Stats")]
     [SerializeField] private float speed;
     [SerializeField] public int LifeCounter = 3;
@@ -28,10 +30,6 @@ public class PlayerController : MonoBehaviour
         inputManager.OnFire.AddListener(PlayerShoot);
         cooldownTimer -= Time.deltaTime;
         rb = GetComponent<Rigidbody2D>();
-
-        
-
-        
     }
 
     void Update()
@@ -82,9 +80,10 @@ public class PlayerController : MonoBehaviour
     void Die()
     {
         Debug.Log("Player defeated!");
-
         this.gameObject.GetComponent<PlayerController>().enabled = false;
         Destroy(gameObject,3f); // Destroy player when Lives reaches zero
+        Time.timeScale = 0f;
+        gameOverPanel.SetActive(true);
 
     }
 
