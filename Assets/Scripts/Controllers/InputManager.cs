@@ -22,10 +22,6 @@ public class InputManager : SingletonMonoBehavior<InputManager>
         if (Input.GetKey(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             OnFire?.Invoke();
-            if (AudioManager.Instance != null)
-            {
-                AudioManager.Instance.PlayLaserSFX();
-            }
         }
 
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
