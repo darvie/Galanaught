@@ -3511,6 +3511,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6422285360764129822, guid: 037117e2b508d0340afc104862af38e6, type: 3}
+      propertyPath: PowerUpGigaSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 03125e8d75c994346bbd48b9b3655515, type: 3}
+    - target: {fileID: 6422285360764129822, guid: 037117e2b508d0340afc104862af38e6, type: 3}
+      propertyPath: PowerUpMultiShotSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: f76b3ea93d18a25439499a0ec6d88434, type: 3}
+    - target: {fileID: 6422285360764129822, guid: 037117e2b508d0340afc104862af38e6, type: 3}
+      propertyPath: PowerUpInvulnerabilitySFX
+      value: 
+      objectReference: {fileID: 8300000, guid: ee8e3fa562d0c4e4ebcc2437c80e071e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
