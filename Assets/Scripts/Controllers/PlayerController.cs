@@ -82,7 +82,6 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Player defeated!");
         this.gameObject.GetComponent<PlayerController>().enabled = false;
         Destroy(gameObject,3f); // Destroy player when Lives reaches zero
-        Time.timeScale = 0f;
         gameOverPanel.SetActive(true);
 
     }
