@@ -9,6 +9,7 @@ public class EnemyStats : MonoBehaviour
     [Header("GameObjects")]
     public GameObject Health;
     public GameObject InvulnBuff;
+    public GameObject MultiBuff;
 
     [Header("Enemy Stats")]
     public float enemyHealth = 10f;   // Initial health of the enemy
@@ -72,11 +73,15 @@ public class EnemyStats : MonoBehaviour
     {
         Pspawn += UnityEngine.Random.Range(1, 5);
 
-        //Pspawn += 1;
+        //Pspawn += 1; Test Value
 
         if(Pspawn == 1)
         {
             Instantiate(InvulnBuff, transform.position, Quaternion.identity);
+        }
+        if (Pspawn == 5)
+        {
+            Instantiate(MultiBuff, transform.position, Quaternion.identity);
         }
 
     }

@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Invuln Shield")]
     public GameObject Shield;
+    public GameObject Guns;
 
     [Header("Bullet")]
     public GameObject bulletPrefab;
@@ -70,6 +71,18 @@ public class PlayerController : MonoBehaviour
     public void InvulPowerUp()
     {
         StartCoroutine(Invuln());
+    }
+
+    public void MultiPowerUp()
+    {
+        StartCoroutine(MultiShot());
+    }
+
+    IEnumerator MultiShot()
+    {
+        Guns.SetActive(true);
+        yield return new WaitForSeconds(3);
+        Guns.SetActive(false);
     }
 
     IEnumerator Invuln()
