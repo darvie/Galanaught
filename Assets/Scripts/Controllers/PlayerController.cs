@@ -5,18 +5,22 @@ using System;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
-    [SerializeField] private float speed;
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] public int LifeCounter = 3;
 
+    [Header("Player Stats")]
+    [SerializeField] private float speed;
+    [SerializeField] public int LifeCounter = 3;
     public float fireDelay = 0.1f;
     private float cooldownTimer = 0;
 
     [Header("Sprites")]
     public Sprite Damaged;
     public Sprite Dead;
-    public Sprite Invulnerability;
 
+    [Header("Invuln Shield")]
+    public GameObject Shield;
+
+    [Header("Bullet")]
     public GameObject bulletPrefab;
     void Start()
     {
@@ -24,6 +28,9 @@ public class PlayerController : MonoBehaviour
         inputManager.OnFire.AddListener(PlayerShoot);
         cooldownTimer -= Time.deltaTime;
         rb = GetComponent<Rigidbody2D>();
+
+        
+
         
     }
 
@@ -47,7 +54,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Player Hit!");
         if (LifeCounter == 2)
         {
-            //Invuln();
+            StartCoroutine(Invuln());
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Damaged;
             Debug.Log("DAMAGE SPRITE!");
 
@@ -62,15 +69,20 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Invuln()
     {
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = Invulnerability;
-        this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
-        yield return new WaitForSeconds(4);
-        this.gameObject.GetComponent<CircleCollider2D>().enabled = true;
+        Shield.SetActive(true);
+        Physics2D.IgnoreLayerCollision(0,6,true);
+        Debug.Log("I AM GOD!");
+        yield return new WaitForSeconds(2);
+        Physics2D.IgnoreLayerCollision(0, 6, false);
+        Shield.SetActive(false);
+        
+
     }
 
     void Die()
     {
         Debug.Log("Player defeated!");
+
         this.gameObject.GetComponent<PlayerController>().enabled = false;
         Destroy(gameObject,3f); // Destroy player when Lives reaches zero
 

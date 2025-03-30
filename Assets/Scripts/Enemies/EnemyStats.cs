@@ -14,16 +14,16 @@ public class EnemyStats : MonoBehaviour
     public float DeathAnim = 5f;
     public float KillTime = 50f;
 
-    [Header("Enemy Sprites")]
-    public Sprite Dead;
-
     [Header("Timer Incriments")]
     public float incrementInterval = 10f;  // Time interval to increment stats (1 minute)
     public float Counter;
 
+    [Header("Death")]
+    public GameObject Death;
+
     public void Start()
     {
-        enemyHealth  += Health.GetComponent<HealthTracker>().TotalHP;
+        enemyHealth += Health.GetComponent<HealthTracker>().TotalHP;
         StartCoroutine(AutoKill());
     }
 
@@ -57,19 +57,21 @@ public class EnemyStats : MonoBehaviour
     {
         Debug.Log("Enemy defeated!");
 
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = Dead;
         this.gameObject.GetComponent<EnemyStats>().enabled = false;
+        this.GetComponent<SpriteRenderer>().enabled = false;
+        Death.SetActive(true);
         Destroy(gameObject, DeathAnim); // Destroy enemy when health reaches zero
     }
 
 
-    
+
     public void UpdateHealth()
     {
-            enemyHealth += HealthInc;
-            Counter = 0;
-            Debug.Log($"Enemy stats updated: Health = {enemyHealth}");
-        
-    }
+        enemyHealth += HealthInc;
+        Counter = 0;
+        Debug.Log($"Enemy stats updated: Health = {enemyHealth}");
 
+    }
 }
+
+
