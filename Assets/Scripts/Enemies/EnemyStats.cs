@@ -1,18 +1,21 @@
 using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 public class EnemyStats : MonoBehaviour
 {
 
-    [Header("Scripts")]
+    [Header("GameObjects")]
     public GameObject Health;
+    public GameObject InvulnBuff;
 
     [Header("Enemy Stats")]
     public float enemyHealth = 10f;   // Initial health of the enemy
     public float HealthInc = 10f;
     public float DeathAnim = 5f;
     public float KillTime = 50f;
+    public float Pspawn;
 
     [Header("Timer Incriments")]
     public float incrementInterval = 10f;  // Time interval to increment stats (1 minute)
@@ -60,10 +63,23 @@ public class EnemyStats : MonoBehaviour
         this.gameObject.GetComponent<EnemyStats>().enabled = false;
         this.GetComponent<SpriteRenderer>().enabled = false;
         Death.SetActive(true);
+        Drop();
         Destroy(gameObject, DeathAnim); // Destroy enemy when health reaches zero
+        
     }
 
+    private void Drop()
+    {
+        Pspawn += UnityEngine.Random.Range(1, 5);
 
+        //Pspawn += 1;
+
+        if(Pspawn == 1)
+        {
+            Instantiate(InvulnBuff, transform.position, Quaternion.identity);
+        }
+
+    }
 
     public void UpdateHealth()
     {

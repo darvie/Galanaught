@@ -67,6 +67,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void InvulPowerUp()
+    {
+        StartCoroutine(Invuln());
+    }
+
     IEnumerator Invuln()
     {
         Shield.SetActive(true);

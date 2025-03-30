@@ -584,11 +584,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: {fileID: 2284202268236980533, guid: 708079c1316df2f4d8905a3494b8377c, type: 3}
+  InvulnBuff: {fileID: 3394663175961693912, guid: cf26ad991cbe7a94da705578df831612, type: 3}
   enemyHealth: 0
   HealthInc: 10
   DeathAnim: 0.75
   KillTime: 50
-  Dead: {fileID: -2585407298343817241, guid: 5ac284fd777a117499c196fb2add2449, type: 3}
+  Pspawn: 0
   incrementInterval: 10
   Counter: 0
   Death: {fileID: 5064630794370354802}
