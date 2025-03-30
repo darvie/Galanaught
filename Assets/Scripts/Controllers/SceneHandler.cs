@@ -57,4 +57,9 @@ public class SceneHandler : SingletonMonoBehavior<SceneHandler>
         yield return new WaitForSeconds(animationDuration);
         SceneManager.LoadScene(scene);
     }
+
+    public void QuitToMain()
+    {
+        LoadMenuScene();
+    }
 }

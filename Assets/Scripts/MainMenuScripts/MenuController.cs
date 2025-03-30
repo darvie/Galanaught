@@ -68,6 +68,11 @@ public class MenuController : MonoBehaviour
         confirmationPrompt.SetActive(false);
     }
 
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu"); // Ensure you use the exact scene name as registered in Unity's Build Settings
+    }
+
     public void QuitGame()
     {
         #if UNITY_STANDALONE
