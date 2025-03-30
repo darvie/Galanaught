@@ -75,7 +75,7 @@ public class EnemyStats : MonoBehaviour
 
     private void Drop()
     {
-        Pspawn += UnityEngine.Random.Range(1, 9);
+        Pspawn += UnityEngine.Random.Range(2, 2);
         Debug.Log("Number Generated!");
 
         //Pspawn += 1; Test Value
