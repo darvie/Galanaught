@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
         Shield.SetActive(true);
         Physics2D.IgnoreLayerCollision(0,6,true);
         Debug.Log("I AM GOD!");
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         Physics2D.IgnoreLayerCollision(0, 6, false);
         Shield.SetActive(false);
         
