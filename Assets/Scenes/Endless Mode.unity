@@ -4881,6 +4881,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5562255206930437798, guid: 14534c82a0ebb6e40b338b5c61cda4fe, type: 3}
+      propertyPath: MaxSpawnTimer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5562255206930437798, guid: 14534c82a0ebb6e40b338b5c61cda4fe, type: 3}
+      propertyPath: MinSpawnTimer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6267717192338533057, guid: 14534c82a0ebb6e40b338b5c61cda4fe, type: 3}
       propertyPath: m_Name
       value: Spawn-S3-L
@@ -4901,6 +4909,14 @@ PrefabInstance:
     - target: {fileID: 1831133665027557680, guid: c2c7f7ad45e21f745ae91eab76a01159, type: 3}
       propertyPath: m_Name
       value: Spawn-Spin-L
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525113957696187785, guid: c2c7f7ad45e21f745ae91eab76a01159, type: 3}
+      propertyPath: MaxSpawnTimer
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525113957696187785, guid: c2c7f7ad45e21f745ae91eab76a01159, type: 3}
+      propertyPath: MinSpawnTimer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8957075193860608162, guid: c2c7f7ad45e21f745ae91eab76a01159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5094,6 +5110,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawn-Top
       objectReference: {fileID: 0}
+    - target: {fileID: 4925412996756307014, guid: a5b2e76e1fabec54eb183a5aa16f8048, type: 3}
+      propertyPath: MaxSpawnTimer
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 4925412996756307014, guid: a5b2e76e1fabec54eb183a5aa16f8048, type: 3}
+      propertyPath: MinSpawnTimer
+      value: 210
+      objectReference: {fileID: 0}
     - target: {fileID: 6007228692128813234, guid: a5b2e76e1fabec54eb183a5aa16f8048, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.84
@@ -5157,7 +5181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8453668779241535680, guid: aaec6564297b2fc4687fd78fa46cc02a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.43
+      value: -1.5199964
       objectReference: {fileID: 0}
     - target: {fileID: 8453668779241535680, guid: aaec6564297b2fc4687fd78fa46cc02a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5191,6 +5215,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8644482901459244835, guid: aaec6564297b2fc4687fd78fa46cc02a, type: 3}
+      propertyPath: MaxSpawnTimer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644482901459244835, guid: aaec6564297b2fc4687fd78fa46cc02a, type: 3}
+      propertyPath: MinSpawnTimer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5210,7 +5242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1480481968257134951, guid: 4fbe94e2ee796dc418ca4d694ada3411, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.54
+      value: 1.18
       objectReference: {fileID: 0}
     - target: {fileID: 1480481968257134951, guid: 4fbe94e2ee796dc418ca4d694ada3411, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5247,6 +5279,14 @@ PrefabInstance:
     - target: {fileID: 3165434248394619004, guid: 4fbe94e2ee796dc418ca4d694ada3411, type: 3}
       propertyPath: m_Name
       value: 'Spawn-Spin-R '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5976851243169079795, guid: 4fbe94e2ee796dc418ca4d694ada3411, type: 3}
+      propertyPath: MaxSpawnTimer
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5976851243169079795, guid: 4fbe94e2ee796dc418ca4d694ada3411, type: 3}
+      propertyPath: MinSpawnTimer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
