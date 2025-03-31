@@ -509,19 +509,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: {fileID: 2284202268236980533, guid: 708079c1316df2f4d8905a3494b8377c, type: 3}
-  InvulnBuff: {fileID: 3394663175961693912, guid: cf26ad991cbe7a94da705578df831612, type: 3}
-  MultiBuff: {fileID: 6992821964306439772, guid: 7ae0f5fcc444a9946a77a9fce06430ca, type: 3}
-  GigaBuff: {fileID: 1322996343119486742, guid: 5d665637816b65f40a6470ea40339f36, type: 3}
   enemyHealth: 500
   HealthInc: 50
   DeathAnim: 0.75
   KillTime: 180
-  Pspawn: 0
   incrementInterval: 5
   Counter: 0
   Death: {fileID: 7509807306737680947}
-  Lower: 1
-  Upper: 3
 --- !u!61 &4974598051275914
 BoxCollider2D:
   m_ObjectHideFlags: 0
