@@ -64,15 +64,19 @@ public class EnemyStats : MonoBehaviour
     }
     void Die()
     {
-        Debug.Log("Enemy defeated!");
-        AudioManager.Instance.PlayExplosionSFX();
+        if (!Dead)
+        {
+            Debug.Log("Enemy defeated!");
+            AudioManager.Instance.PlayExplosionSFX();
 
-        this.gameObject.GetComponent<EnemyStats>().enabled = false;
-        this.GetComponent<SpriteRenderer>().enabled = false;
-        Death.SetActive(true);
-        Drop();
-        Dead = true;
-        Destroy(gameObject, DeathAnim); // Destroy enemy when health reaches zero
+            this.gameObject.GetComponent<EnemyStats>().enabled = false;
+            this.GetComponent<SpriteRenderer>().enabled = false;
+            Death.SetActive(true);
+            Drop();
+            Dead = true;
+            Destroy(gameObject, DeathAnim); // Destroy enemy when health reaches zero
+            KillCounterManager.Instance.IncreaseKillCount();
+        }
     }
     private void Drop()
     {
