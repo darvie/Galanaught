@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Icon - Weapons - Auto Cannons
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 8789a201bc9f33549a787ce5cd3d79e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 8789a201bc9f33549a787ce5cd3d79e0, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
