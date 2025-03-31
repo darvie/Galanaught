@@ -29,6 +29,15 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
         if (Instance == this)
         {
             DontDestroyOnLoad(gameObject); // Keep this across scenes
+
+            if (GetComponent<AudioListener>() == null)
+            {
+                gameObject.AddComponent<AudioListener>();
+            }
+            else
+            {
+                Destroy(gameObject); // Destroy duplicate instances
+            }
         }
     }
 
