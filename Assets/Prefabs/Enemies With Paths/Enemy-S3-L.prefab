@@ -81,7 +81,7 @@ MonoBehaviour:
   bulletLife: 5
   speed: 3
   spawnerType: 0
-  firingRate: 0.6
+  firingRate: 1
 --- !u!1 &867311129710142567
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
   bulletLife: 5
   speed: 5
   spawnerType: 0
-  firingRate: 0.4
+  firingRate: 0.6
 --- !u!1 &990750698616628654
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +587,7 @@ MonoBehaviour:
   InvulnBuff: {fileID: 3460432648745717090, guid: 6d400aa3a83948644ab00ac06d375c74, type: 3}
   MultiBuff: {fileID: 2731170821974266230, guid: a2f275052ab0945488c0de88e5832def, type: 3}
   GigaBuff: {fileID: 3405688183089898867, guid: b357ab4f4edc0ee45b96cc96527813c3, type: 3}
+  HEALING: {fileID: 9020743965089788243, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
   enemyHealth: 0
   HealthInc: 10
   DeathAnim: 0.75
@@ -595,6 +596,8 @@ MonoBehaviour:
   incrementInterval: 10
   Counter: 0
   Death: {fileID: 5064630794370354802}
+  Dead: 0
+  chosen: 0
 --- !u!114 &5988030347839566738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,7 +1266,7 @@ MonoBehaviour:
   bulletLife: 5
   speed: 5
   spawnerType: 0
-  firingRate: 0.6
+  firingRate: 1
 --- !u!1 &4869187027752663573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,7 +1402,7 @@ MonoBehaviour:
   bulletLife: 5
   speed: 5
   spawnerType: 0
-  firingRate: 0.4
+  firingRate: 0.6
 --- !u!1 &5080565004328411526
 GameObject:
   m_ObjectHideFlags: 0
