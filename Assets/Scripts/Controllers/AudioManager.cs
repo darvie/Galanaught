@@ -89,7 +89,7 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     {
 
         if (sfxSource == null || laserBulletSFX == null) return;
-        sfxSource.PlayOneShot(laserBulletSFX);
+        sfxSource.PlayOneShot(ButtonClick);
     }
 
     public void PlayLaserBulletSFX() {
@@ -101,7 +101,7 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     {
 
         if (sfxSource == null || laserBulletSFX == null) return;
-        sfxSource.PlayOneShot(laserBulletSFX);
+        sfxSource.PlayOneShot(BulletSFX);
     }
 
     public void PlayExplosionSFX()

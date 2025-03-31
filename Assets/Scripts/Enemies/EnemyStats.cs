@@ -14,7 +14,7 @@ public class EnemyStats : MonoBehaviour
     public float DeathAnim = 5f;
     public float KillTime = 50f;
 
-    [Header("Timer Incriments")]
+    [Header("Timer Increments")]
     public float incrementInterval = 10f;  // Time interval to increment stats (1 minute)
     public float Counter;
 
