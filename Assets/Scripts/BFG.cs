@@ -1,7 +1,6 @@
-
 using UnityEngine;
 
-public class EBulletNoPlayer : MonoBehaviour
+public class BFG : MonoBehaviour
 {
     public float bulletLife = 1f;  // Defines how long before the bullet is destroyed
     public float rotation = 0f;
@@ -27,20 +26,21 @@ public class EBulletNoPlayer : MonoBehaviour
 
     private Vector2 Movement(float timer)
     {
-        // Moves up according to the bullet's local Y-axis
-        float x = timer * speed * transform.up.x;
+        // Moves right according to the bullet's rotation
+        // float x = timer * speed * transform.right.x;
         float y = timer * speed * transform.up.y;
-        return new Vector2(x + spawnPoint.x, y + spawnPoint.y);
+        return new Vector2(spawnPoint.x, y + spawnPoint.y);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log($"collided with{other.gameObject.name}");
+        Debug.Log($"BFG collided with{other.gameObject.name}");
         if (other.gameObject.CompareTag("Enemy"))
         {
-            other.gameObject.GetComponent<EnemyStats>().TakeDamage(40);
+
+            other.gameObject.GetComponent<EnemyStats>().TakeDamage(3000);
+            Destroy(gameObject);
         }
-       
 
         if (other.gameObject.CompareTag("Wall"))
         {

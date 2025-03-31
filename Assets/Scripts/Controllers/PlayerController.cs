@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator GigaUP()
     {
         Giga.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         Giga.SetActive(false);
     }
 
