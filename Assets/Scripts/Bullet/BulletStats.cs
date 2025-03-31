@@ -7,6 +7,8 @@ public class BulletStats : MonoBehaviour
 
     [Header("Stats")]
     public float damage = 10f;
+
+    public AudioManager AudioManager;
     public void IncreaseDamage(float amount)
     {
         damage += amount;
@@ -23,6 +25,7 @@ public class BulletStats : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log($"collided with{other.gameObject.name}");
+        AudioManager.PlayExplosionSFX();
         if (other.gameObject.CompareTag("Player"))
         {
 

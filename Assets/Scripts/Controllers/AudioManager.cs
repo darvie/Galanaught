@@ -15,6 +15,10 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     [SerializeField] public AudioClip explosionSFX; //SFX- The Ultiomate 2017 16 bit mini Pack Explosion2 007 Wav
     [SerializeField] public AudioClip BossExplosionSFX;//Bullet-Explosion-PowerUpSFX Die
     [SerializeField] public AudioClip PlayerHitSFX; //SFX- The Ultiomate 2017 16 bit mini Pack Ouch 008
+    [SerializeField] public AudioClip PowerUpInvulnerabilitySFX; //SFX- The Ultiomate 2017 16 bit mini Pack Powerup 006 wav
+    [SerializeField] public AudioClip PowerUpGigaSFX; //SFX- The Ultiomate 2017 16 bit mini Pack Powerup 006 wav
+    [SerializeField] public AudioClip PowerUpMultiShotSFX; //SFX- The Ultiomate 2017 16 bit mini Pack Powerup 006 wav
+
 
     private int currentTrackIndex = 0; 
     private AudioClip[] currentPlaylist; 
@@ -82,6 +86,24 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
         sfxSource.PlayOneShot(explosionSFX);
     }
     public void PlayPlayerHitSFX()
+    {
+
+        if (sfxSource == null || explosionSFX == null) return;
+        sfxSource.PlayOneShot(explosionSFX);
+    }
+    public void PlayPowerUpInvulnerabilitySFX()
+    {
+
+        if (sfxSource == null || explosionSFX == null) return;
+        sfxSource.PlayOneShot(explosionSFX);
+    }
+    public void PlayPowerUpGigaSFX()
+    {
+
+        if (sfxSource == null || explosionSFX == null) return;
+        sfxSource.PlayOneShot(explosionSFX);
+    }
+    public void PlayPowerUpMultiShotSFX()
     {
 
         if (sfxSource == null || explosionSFX == null) return;

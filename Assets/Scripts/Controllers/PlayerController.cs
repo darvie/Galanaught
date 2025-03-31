@@ -128,6 +128,7 @@ public class PlayerController : MonoBehaviour
         this.gameObject.GetComponent<PlayerController>().enabled = false;
         Destroy(gameObject,3f); // Destroy player when Lives reaches zero
         gameOverPanel.SetActive(true);
+        
 
     }
 
@@ -142,7 +143,7 @@ public class PlayerController : MonoBehaviour
 
             cooldownTimer = fireDelay; // Reset the cooldown timer
             Debug.Log("Cooldown reset to: " + cooldownTimer);
-            AudioManager.Instance.PlayLaserBulletSFX();
+            AudioManager.Instance.PlayBulletSFX();
         }
     }
 
