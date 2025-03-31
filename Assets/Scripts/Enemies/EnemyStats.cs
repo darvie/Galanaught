@@ -25,6 +25,9 @@ public class EnemyStats : MonoBehaviour
     [Header("Death")]
     public GameObject Death;
 
+    [Header("IsDead?")]
+    public bool Dead;
+
     public void Start()
     {
         enemyHealth += Health.GetComponent<HealthTracker>().TotalHP;
@@ -66,26 +69,33 @@ public class EnemyStats : MonoBehaviour
         this.GetComponent<SpriteRenderer>().enabled = false;
         Death.SetActive(true);
         Drop();
+        Dead = true;
         Destroy(gameObject, DeathAnim); // Destroy enemy when health reaches zero
     }
     private void Drop()
     {
-        Pspawn += UnityEngine.Random.Range(1, 9);
-        Debug.Log("Number Generated!");
+        if (Dead == true)
+        {
+            Pspawn += UnityEngine.Random.Range(1, 9);
+            Debug.Log("Number Generated!");
 
-        //Pspawn += 1; Test Value
 
-        if (Pspawn == 1)
-        {
-            Instantiate(InvulnBuff, transform.position, Quaternion.identity);
-        }
-        else if (Pspawn == 3)
-        {
-            Instantiate(MultiBuff, transform.position, Quaternion.identity);
-        }
-        else if (Pspawn == 6)
-        {
-            Instantiate(GigaBuff, transform.position, Quaternion.identity);
+            if (Pspawn == 1)
+            {
+                Instantiate(InvulnBuff, transform.position, Quaternion.identity);
+            }
+            else if (Pspawn == 3)
+            {
+                Instantiate(MultiBuff, transform.position, Quaternion.identity);
+            }
+            else if (Pspawn == 6)
+            {
+                Instantiate(GigaBuff, transform.position, Quaternion.identity);
+            }
+            else if (Pspawn == 9)
+            {
+                Instantiate(Health, transform.position, Quaternion.identity);
+            }
         }
     }
 
