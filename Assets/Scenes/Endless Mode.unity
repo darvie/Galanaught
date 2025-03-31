@@ -2914,6 +2914,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8453668779241535680, guid: aaec6564297b2fc4687fd78fa46cc02a, type: 3}
   m_PrefabInstance: {fileID: 8616577077224849330}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1374001563
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8132907569626437942, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132907569626437942, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132907569626437942, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132907569626437942, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132907569626437942, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132907569626437942, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132907569626437942, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132907569626437942, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132907569626437942, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132907569626437942, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020743965089788243, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_Name
+      value: HealthPowerUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020743965089788243, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c14745e60b0c7741b05e12b4f0b695f, type: 3}
 --- !u!1001 &1403066030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5043,7 +5104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7044305805618679985, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
       propertyPath: LifeCounter
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7044305805618679985, guid: f5f34cb38b907134aa56cb75708d8114, type: 3}
       propertyPath: inputManager
@@ -5309,3 +5370,4 @@ SceneRoots:
   - {fileID: 1066817917}
   - {fileID: 965433244}
   - {fileID: 567243358}
+  - {fileID: 1374001563}
