@@ -38,6 +38,7 @@ public class PauseMenuController : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        AudioListener.pause = true;
     }
 
     public void ResumeGame()
@@ -46,10 +47,13 @@ public class PauseMenuController : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        AudioListener.pause = false; // Resume audio
+
     }
     public void LoadMainMenu()
     {
         Debug.Log("Loading Main Menu");
         SceneManager.LoadScene("Main Menu");
+        Time.timeScale = 1f;
     }
 }
