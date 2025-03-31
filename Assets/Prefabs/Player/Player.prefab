@@ -335,9 +335,11 @@ MonoBehaviour:
   gameOverPanel: {fileID: 0}
   AudioManager: {fileID: 0}
   speed: 5
-  LifeCounter: 3
+  LifeCounter: 4
   fireDelay: 0.1
+  Full: {fileID: 9151870607361172998, guid: 55994d6b16b301c47b1232af7a1e1f1a, type: 3}
   Damaged: {fileID: 5876141782181964057, guid: 6f5a487bd5ecbd84195ff2bd48ae5576, type: 3}
+  NearDeath: {fileID: -9096396444699361508, guid: c08077408dd681748a277f7f9c9a7760, type: 3}
   Dead: {fileID: -6399114694481498382, guid: 3e9d727e737b0a047bc7dfb5e0ac24fb, type: 3}
   Shield: {fileID: 2650160190349538742}
   Multi: {fileID: -2253911629886400664}

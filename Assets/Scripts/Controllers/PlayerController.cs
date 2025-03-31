@@ -17,7 +17,9 @@ public class PlayerController : MonoBehaviour
     private float cooldownTimer = 0;
 
     [Header("Sprites")]
+    public Sprite Full;
     public Sprite Damaged;
+    public Sprite NearDeath;
     public Sprite Dead;
 
     [Header("PowerUps")]
@@ -60,6 +62,11 @@ public class PlayerController : MonoBehaviour
             Debug.Log("DAMAGE SPRITE!");
             AudioManager.Instance.PlayPlayerHitSFX();
 
+        } else if(LifeCounter == 1)
+        {
+            StartCoroutine(Invuln());
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = NearDeath;
+            AudioManager.Instance.PlayPlayerHitSFX();
         }
         else if (LifeCounter <= 0)
         {
@@ -68,7 +75,29 @@ public class PlayerController : MonoBehaviour
             Die();
         }
     }
+    public void HEALPOWERUP()
+    {
+        if (LifeCounter != 0 && LifeCounter != 4)
+        {
+            LifeCounter += 1;
+            Debug.Log("Player HEAL!");
+             if (LifeCounter == 3)
+            {
+                StartCoroutine(Invuln());
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = Full;
+                Debug.Log("DAMAGE SPRITE!");
+                AudioManager.Instance.PlayPlayerHitSFX();
+            }
+            else if (LifeCounter == 2)
+            {
+                StartCoroutine(Invuln());
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = Damaged;
+                Debug.Log("DAMAGE SPRITE!");
+                AudioManager.Instance.PlayPlayerHitSFX();
+            }
+        }
 
+    }
     public void InvulnPowerUp()
     {
         StartCoroutine(InvulnUP());
