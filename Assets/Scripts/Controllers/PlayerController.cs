@@ -22,8 +22,6 @@ public class PlayerController : MonoBehaviour
 
     [Header("Invuln Shield")]
     public GameObject Shield;
-    public GameObject Guns;
-    public GameObject BFG10K;
 
     [Header("Bullet")]
     public GameObject bulletPrefab;
@@ -69,55 +67,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void GigaPowerUp()
-    {
-        StartCoroutine(GigaPower());
-    }
-
-    public void InvulPowerUp()
-    {
-        StartCoroutine(InvulnUP());
-    }
-
-    public void MultiPowerUp()
-    {
-        StartCoroutine(MultiShot());
-    }
-
-    IEnumerator GigaPower()
-    {
-        BFG10K.SetActive(true);
-        yield return new WaitForSeconds(5);
-        BFG10K.SetActive(false);
-    }
-    IEnumerator MultiShot()
-    {
-        Guns.SetActive(true);
-        yield return new WaitForSeconds(3);
-        Guns.SetActive(false);
-    }
-
     IEnumerator Invuln()
     {
         Shield.SetActive(true);
         Physics2D.IgnoreLayerCollision(0,6,true);
-        //Debug.Log("I AM GOD!");
+        Debug.Log("I AM GOD!");
         yield return new WaitForSeconds(2);
         Physics2D.IgnoreLayerCollision(0, 6, false);
         Shield.SetActive(false);
         
-
-    }
-
-    IEnumerator InvulnUP()
-    {
-        Shield.SetActive(true);
-        Physics2D.IgnoreLayerCollision(0, 6, true);
-        //Debug.Log("I AM GOD!");
-        yield return new WaitForSeconds(5);
-        Physics2D.IgnoreLayerCollision(0, 6, false);
-        Shield.SetActive(false);
-
 
     }
 
@@ -129,6 +87,7 @@ public class PlayerController : MonoBehaviour
         Destroy(gameObject,3f); // Destroy player when Lives reaches zero
         gameOverPanel.SetActive(true);
 
+        
 
     }
 
@@ -138,7 +97,7 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 offset = new Vector3(0, 1f, 0);
 
-            //Debug.Log("Pew!");
+            Debug.Log("Pew!");
             Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
 
             cooldownTimer = fireDelay; // Reset the cooldown timer

@@ -584,19 +584,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: {fileID: 2284202268236980533, guid: 708079c1316df2f4d8905a3494b8377c, type: 3}
-  InvulnBuff: {fileID: 3394663175961693912, guid: cf26ad991cbe7a94da705578df831612, type: 3}
-  MultiBuff: {fileID: 6992821964306439772, guid: 7ae0f5fcc444a9946a77a9fce06430ca, type: 3}
-  GigaBuff: {fileID: 1322996343119486742, guid: 5d665637816b65f40a6470ea40339f36, type: 3}
   enemyHealth: 0
   HealthInc: 10
   DeathAnim: 0.75
   KillTime: 50
-  Pspawn: 0
+  Dead: {fileID: -2585407298343817241, guid: 5ac284fd777a117499c196fb2add2449, type: 3}
   incrementInterval: 10
   Counter: 0
   Death: {fileID: 5064630794370354802}
-  Lower: 1
-  Upper: 3
 --- !u!114 &5988030347839566738
 MonoBehaviour:
   m_ObjectHideFlags: 0
