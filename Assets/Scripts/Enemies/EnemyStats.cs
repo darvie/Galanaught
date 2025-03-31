@@ -25,8 +25,9 @@ public class EnemyStats : MonoBehaviour
     [Header("Death")]
     public GameObject Death;
 
-    [Header("IsDead?")]
+    [Header("Booleans")]
     public bool Dead;
+    public bool chosen = false;
 
     public void Start()
     {
@@ -76,25 +77,33 @@ public class EnemyStats : MonoBehaviour
     {
         if (Dead == true)
         {
-            Pspawn += UnityEngine.Random.Range(1, 9);
-            Debug.Log("Number Generated!");
-
+            if (chosen == true)
+            {
+                Pspawn += UnityEngine.Random.Range(1, 9);
+                chosen = true;
+                Debug.Log("Number Generated!");
+            }
+            
 
             if (Pspawn == 1 || Pspawn == 4)
             {
                 Instantiate(InvulnBuff, transform.position, Quaternion.identity);
+                chosen = false;
             }
             else if (Pspawn == 3 || Pspawn == 7)
             {
                 Instantiate(MultiBuff, transform.position, Quaternion.identity);
+                chosen = false;
             }
             else if (Pspawn == 6)
             {
                 Instantiate(GigaBuff, transform.position, Quaternion.identity);
+                chosen = false;
             }
             else if (Pspawn == 9 || Pspawn == 2 || Pspawn == 5)
             {
                 Instantiate(Health, transform.position, Quaternion.identity);
+                chosen = false;
             }
         }
     }
