@@ -73,8 +73,8 @@ public class EnemyStats : MonoBehaviour
             this.gameObject.GetComponent<EnemyStats>().enabled = false;
             this.GetComponent<SpriteRenderer>().enabled = false;
             Death.SetActive(true);
-            Drop();
             Dead = true;
+            Drop();
             Destroy(gameObject, DeathAnim); // Destroy enemy when health reaches zero
             KillCounterManager.Instance.IncreaseKillCount();
         }
