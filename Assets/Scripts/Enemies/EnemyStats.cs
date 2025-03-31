@@ -65,6 +65,7 @@ public class EnemyStats : MonoBehaviour
         this.gameObject.GetComponent<EnemyStats>().enabled = false;
         this.GetComponent<SpriteRenderer>().enabled = false;
         Death.SetActive(true);
+        Drop();
         Destroy(gameObject, DeathAnim); // Destroy enemy when health reaches zero
     }
     private void Drop()
@@ -78,11 +79,11 @@ public class EnemyStats : MonoBehaviour
         {
             Instantiate(InvulnBuff, transform.position, Quaternion.identity);
         }
-        if (Pspawn == 3)
+        else if (Pspawn == 3)
         {
             Instantiate(MultiBuff, transform.position, Quaternion.identity);
         }
-        if (Pspawn == 6)
+        else if (Pspawn == 6)
         {
             Instantiate(GigaBuff, transform.position, Quaternion.identity);
         }
