@@ -1,9 +1,26 @@
 using UnityEngine;
 
-public abstract class SingletonMonoBehavior<T> : MonoBehaviour where T : MonoBehaviour, new()
+public abstract class SingletonMonoBehavior<T> : MonoBehaviour where T : MonoBehaviour
 {
     private static T _instance;
-    public static T Instance => _instance;
+    public static T Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<T>();
+
+                if (_instance == null)
+                {
+                    GameObject singletonObject = new GameObject(typeof(T).Name);
+                    _instance = singletonObject.AddComponent<T>();
+                    DontDestroyOnLoad(singletonObject);
+                }
+            }
+            return _instance;
+        }
+    }
 
     protected virtual void Awake()
     {
@@ -12,6 +29,8 @@ public abstract class SingletonMonoBehavior<T> : MonoBehaviour where T : MonoBeh
             Destroy(gameObject);
             return;
         }
-        _instance = GetComponent<T>();
+
+        _instance = this as T;
+        DontDestroyOnLoad(gameObject);
     }
 }

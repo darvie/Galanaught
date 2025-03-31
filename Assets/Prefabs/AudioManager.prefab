@@ -64,6 +64,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d0c9ecf85317c1443916ecaf066d3f5c, type: 3}
   - {fileID: 8300000, guid: 7258e56c2141f154d938ad70ea6ad26d, type: 3}
   - {fileID: 8300000, guid: d5ee6e760d5c09e48b29192c3a7b4234, type: 3}
+  ButtonClick: {fileID: 0}
   defeatMusic: {fileID: 8300000, guid: db77f89f722c4d940b86421dc685e80c, type: 3}
   levelUpMusic: {fileID: 8300000, guid: e53dce921d2e59b48b883afa2ce8d78c, type: 3}
   laserBulletSFX: {fileID: 8300000, guid: a08f1a5b7482b2948803c2d6960030d5, type: 3}
@@ -71,6 +72,9 @@ MonoBehaviour:
   explosionSFX: {fileID: 8300000, guid: b9c9432ed54c6f1438f702a04a04bce3, type: 3}
   BossExplosionSFX: {fileID: 8300000, guid: 9120a5e46e2cc8b4fbb8adba25483c25, type: 3}
   PlayerHitSFX: {fileID: 8300000, guid: 866ac4b26d6a2d34dbd8115bac8cfdd4, type: 3}
+  PowerUpInvulnerabilitySFX: {fileID: 0}
+  PowerUpGigaSFX: {fileID: 0}
+  PowerUpMultiShotSFX: {fileID: 0}
 --- !u!82 &2953395625259511235
 AudioSource:
   m_ObjectHideFlags: 0
@@ -81,8 +85,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ba305cb82d6dfd644831583c77032dec, type: 3}
+  m_Resource: {fileID: 8300000, guid: ba305cb82d6dfd644831583c77032dec, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

@@ -12,6 +12,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
     private int currentLives;
 
     public GameObject gameOverPanel;
+    public SceneHandler SceneHandler;
 
 
     private void Start()

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : SingletonMonoBehavior<AudioManager>
 {
@@ -8,6 +9,7 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     [SerializeField] public AudioClip[] bossBattleMusic;
     [SerializeField] public AudioClip[] mainMenuMusic;
     [SerializeField] public AudioClip[] gameplayMusic;
+    [SerializeField] public AudioClip ButtonClick; //Blasteriods-sfx bullet-laser
     [SerializeField] public AudioClip defeatMusic; //Defeat Defeated
     [SerializeField] public AudioClip levelUpMusic;
     [SerializeField] public AudioClip laserBulletSFX; //Bullet SFX SFX_15c
@@ -21,23 +23,37 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
 
 
     private int currentTrackIndex = 0; 
-    private AudioClip[] currentPlaylist; 
+    private AudioClip[] currentPlaylist;
 
     protected override void Awake()
     {
         base.Awake();
         if (Instance == this)
         {
-            DontDestroyOnLoad(gameObject); // Keep this across scenes
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject); // Destroy duplicate instances
+            return;
+        }
+    }
 
-            if (GetComponent<AudioListener>() == null)
-            {
-                gameObject.AddComponent<AudioListener>();
-            }
-            else
-            {
-                Destroy(gameObject); // Destroy duplicate instances
-            }
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded; // Listen for scene changes
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded; // Remove listener when destroyed
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (musicSource != null && !musicSource.isPlaying)
+        {
+            musicSource.Play(); // Resume music if it stopped
         }
     }
 
@@ -69,6 +85,12 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
         musicSource.loop = false; // No looping for defeat sound
         musicSource.Play();
     }
+    public void PlayButtonClicks()
+    {
+
+        if (sfxSource == null || laserBulletSFX == null) return;
+        sfxSource.PlayOneShot(ButtonClick);
+    }
 
     public void PlayLaserBulletSFX() {
 
@@ -79,7 +101,7 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     {
 
         if (sfxSource == null || laserBulletSFX == null) return;
-        sfxSource.PlayOneShot(laserBulletSFX);
+        sfxSource.PlayOneShot(BulletSFX);
     }
 
     public void PlayExplosionSFX()
