@@ -10,6 +10,7 @@ public class EnemyStats : MonoBehaviour
     public GameObject InvulnBuff;
     public GameObject MultiBuff;
     public GameObject GigaBuff;
+    public GameObject HEALING;
 
     [Header("Enemy Stats")]
     public float enemyHealth = 10f;   // Initial health of the enemy
@@ -77,7 +78,7 @@ public class EnemyStats : MonoBehaviour
     {
         if (Dead == true)
         {
-            if (chosen == true)
+            if (chosen == false)
             {
                 Pspawn += UnityEngine.Random.Range(1, 9);
                 chosen = true;
@@ -102,7 +103,7 @@ public class EnemyStats : MonoBehaviour
             }
             else if (Pspawn == 9 || Pspawn == 2 || Pspawn == 5)
             {
-                Instantiate(Health, transform.position, Quaternion.identity);
+                Instantiate(HEALING, transform.position, Quaternion.identity);
                 chosen = false;
             }
         }
