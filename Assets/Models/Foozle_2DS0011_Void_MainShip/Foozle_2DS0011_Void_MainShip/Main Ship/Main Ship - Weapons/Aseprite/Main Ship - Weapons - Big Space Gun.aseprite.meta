@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638788909896358571
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -124,8 +124,8 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -136,7 +136,93 @@ ScriptedImporter:
       height: 48
     spriteID: 1ce6cf08b50d7e24d9a1746ebbbb2559
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 15, y: -5}
+      - {x: 14, y: -5}
+      - {x: 14, y: -4}
+      - {x: 13, y: -4}
+      - {x: 13, y: -3}
+      - {x: 12, y: -3}
+      - {x: 12, y: -2}
+      - {x: 11, y: -2}
+      - {x: 11, y: -1}
+      - {x: 10, y: -1}
+      - {x: 10, y: 0}
+      - {x: 9, y: 0}
+      - {x: 9, y: 1}
+      - {x: 8, y: 1}
+      - {x: 8, y: 2}
+      - {x: 9, y: 2}
+      - {x: 9, y: 5}
+      - {x: 8, y: 5}
+      - {x: 8, y: 9}
+      - {x: 7, y: 9}
+      - {x: 7, y: 10}
+      - {x: 6, y: 10}
+      - {x: 6, y: 15}
+      - {x: 5, y: 15}
+      - {x: 5, y: 16}
+      - {x: -5, y: 16}
+      - {x: -5, y: 15}
+      - {x: -6, y: 15}
+      - {x: -6, y: 11}
+      - {x: -7, y: 11}
+      - {x: -7, y: 10}
+      - {x: -8, y: 10}
+      - {x: -8, y: 9}
+      - {x: -9, y: 9}
+      - {x: -9, y: 6}
+      - {x: -8, y: 6}
+      - {x: -8, y: 3}
+      - {x: -7, y: 3}
+      - {x: -7, y: 2}
+      - {x: -8, y: 2}
+      - {x: -8, y: 1}
+      - {x: -9, y: 1}
+      - {x: -9, y: 0}
+      - {x: -10, y: 0}
+      - {x: -10, y: -1}
+      - {x: -11, y: -1}
+      - {x: -11, y: -2}
+      - {x: -12, y: -2}
+      - {x: -12, y: -3}
+      - {x: -13, y: -3}
+      - {x: -13, y: -4}
+      - {x: -14, y: -4}
+      - {x: -14, y: -5}
+      - {x: -15, y: -5}
+      - {x: -15, y: -11}
+      - {x: -13, y: -11}
+      - {x: -13, y: -10}
+      - {x: -11, y: -10}
+      - {x: -11, y: -9}
+      - {x: -9, y: -9}
+      - {x: -9, y: -8}
+      - {x: -7, y: -8}
+      - {x: -7, y: -7}
+      - {x: -3, y: -7}
+      - {x: -3, y: -13}
+      - {x: -1, y: -13}
+      - {x: -1, y: -12}
+      - {x: 1, y: -12}
+      - {x: 1, y: -13}
+      - {x: 3, y: -13}
+      - {x: 3, y: -7}
+      - {x: 7, y: -7}
+      - {x: 7, y: -8}
+      - {x: 9, y: -8}
+      - {x: 9, y: -9}
+      - {x: 11, y: -9}
+      - {x: 11, y: -10}
+      - {x: 13, y: -10}
+      - {x: 13, y: -11}
+      - {x: 15, y: -11}
+    - outline:
+      - {x: -6, y: 6}
+      - {x: -5, y: 6}
+      - {x: -5, y: 9}
+      - {x: -6, y: 9}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -145,8 +231,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Frame_1
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -157,7 +243,93 @@ ScriptedImporter:
       height: 48
     spriteID: e6988957de64be94bb3fc985e0a8f3be
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 15, y: -5}
+      - {x: 14, y: -5}
+      - {x: 14, y: -4}
+      - {x: 13, y: -4}
+      - {x: 13, y: -3}
+      - {x: 12, y: -3}
+      - {x: 12, y: -2}
+      - {x: 11, y: -2}
+      - {x: 11, y: -1}
+      - {x: 10, y: -1}
+      - {x: 10, y: 0}
+      - {x: 9, y: 0}
+      - {x: 9, y: 1}
+      - {x: 8, y: 1}
+      - {x: 8, y: 2}
+      - {x: 9, y: 2}
+      - {x: 9, y: 5}
+      - {x: 8, y: 5}
+      - {x: 8, y: 9}
+      - {x: 7, y: 9}
+      - {x: 7, y: 10}
+      - {x: 6, y: 10}
+      - {x: 6, y: 15}
+      - {x: 5, y: 15}
+      - {x: 5, y: 16}
+      - {x: -5, y: 16}
+      - {x: -5, y: 15}
+      - {x: -6, y: 15}
+      - {x: -6, y: 11}
+      - {x: -7, y: 11}
+      - {x: -7, y: 10}
+      - {x: -8, y: 10}
+      - {x: -8, y: 9}
+      - {x: -9, y: 9}
+      - {x: -9, y: 6}
+      - {x: -8, y: 6}
+      - {x: -8, y: 3}
+      - {x: -7, y: 3}
+      - {x: -7, y: 2}
+      - {x: -8, y: 2}
+      - {x: -8, y: 1}
+      - {x: -9, y: 1}
+      - {x: -9, y: 0}
+      - {x: -10, y: 0}
+      - {x: -10, y: -1}
+      - {x: -11, y: -1}
+      - {x: -11, y: -2}
+      - {x: -12, y: -2}
+      - {x: -12, y: -3}
+      - {x: -13, y: -3}
+      - {x: -13, y: -4}
+      - {x: -14, y: -4}
+      - {x: -14, y: -5}
+      - {x: -15, y: -5}
+      - {x: -15, y: -11}
+      - {x: -13, y: -11}
+      - {x: -13, y: -10}
+      - {x: -11, y: -10}
+      - {x: -11, y: -9}
+      - {x: -9, y: -9}
+      - {x: -9, y: -8}
+      - {x: -7, y: -8}
+      - {x: -7, y: -7}
+      - {x: -3, y: -7}
+      - {x: -3, y: -13}
+      - {x: -1, y: -13}
+      - {x: -1, y: -12}
+      - {x: 1, y: -12}
+      - {x: 1, y: -13}
+      - {x: 3, y: -13}
+      - {x: 3, y: -7}
+      - {x: 7, y: -7}
+      - {x: 7, y: -8}
+      - {x: 9, y: -8}
+      - {x: 9, y: -9}
+      - {x: 11, y: -9}
+      - {x: 11, y: -10}
+      - {x: 13, y: -10}
+      - {x: 13, y: -11}
+      - {x: 15, y: -11}
+    - outline:
+      - {x: -6, y: 6}
+      - {x: -5, y: 6}
+      - {x: -5, y: 9}
+      - {x: -6, y: 9}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -166,8 +338,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 60}
   - name: Frame_2
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -178,7 +350,88 @@ ScriptedImporter:
       height: 48
     spriteID: eeedbe3b6ed4c534495b1c8cc4623e21
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 15, y: -5}
+      - {x: 14, y: -5}
+      - {x: 14, y: -4}
+      - {x: 13, y: -4}
+      - {x: 13, y: -3}
+      - {x: 12, y: -3}
+      - {x: 12, y: -2}
+      - {x: 11, y: -2}
+      - {x: 11, y: -1}
+      - {x: 10, y: -1}
+      - {x: 10, y: 0}
+      - {x: 9, y: 0}
+      - {x: 9, y: 1}
+      - {x: 8, y: 1}
+      - {x: 8, y: 2}
+      - {x: 9, y: 2}
+      - {x: 9, y: 5}
+      - {x: 8, y: 5}
+      - {x: 8, y: 9}
+      - {x: 7, y: 9}
+      - {x: 7, y: 10}
+      - {x: 6, y: 10}
+      - {x: 6, y: 15}
+      - {x: 5, y: 15}
+      - {x: 5, y: 16}
+      - {x: -5, y: 16}
+      - {x: -5, y: 15}
+      - {x: -6, y: 15}
+      - {x: -6, y: 11}
+      - {x: -7, y: 11}
+      - {x: -7, y: 10}
+      - {x: -8, y: 10}
+      - {x: -8, y: 9}
+      - {x: -9, y: 9}
+      - {x: -9, y: 6}
+      - {x: -8, y: 6}
+      - {x: -8, y: 3}
+      - {x: -7, y: 3}
+      - {x: -7, y: 2}
+      - {x: -8, y: 2}
+      - {x: -8, y: 1}
+      - {x: -9, y: 1}
+      - {x: -9, y: 0}
+      - {x: -10, y: 0}
+      - {x: -10, y: -1}
+      - {x: -11, y: -1}
+      - {x: -11, y: -2}
+      - {x: -12, y: -2}
+      - {x: -12, y: -3}
+      - {x: -13, y: -3}
+      - {x: -13, y: -4}
+      - {x: -14, y: -4}
+      - {x: -14, y: -5}
+      - {x: -15, y: -5}
+      - {x: -15, y: -11}
+      - {x: -13, y: -11}
+      - {x: -13, y: -10}
+      - {x: -11, y: -10}
+      - {x: -11, y: -9}
+      - {x: -9, y: -9}
+      - {x: -9, y: -8}
+      - {x: -7, y: -8}
+      - {x: -7, y: -7}
+      - {x: -3, y: -7}
+      - {x: -3, y: -13}
+      - {x: -1, y: -13}
+      - {x: -1, y: -12}
+      - {x: 1, y: -12}
+      - {x: 1, y: -13}
+      - {x: 3, y: -13}
+      - {x: 3, y: -7}
+      - {x: 7, y: -7}
+      - {x: 7, y: -8}
+      - {x: 9, y: -8}
+      - {x: 9, y: -9}
+      - {x: 11, y: -9}
+      - {x: 11, y: -10}
+      - {x: 13, y: -10}
+      - {x: 13, y: -11}
+      - {x: 15, y: -11}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -187,8 +440,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 116}
   - name: Frame_3
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -199,7 +452,88 @@ ScriptedImporter:
       height: 48
     spriteID: 5ff27ad93d0b5974886f559a755adeb4
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 15, y: -5}
+      - {x: 14, y: -5}
+      - {x: 14, y: -4}
+      - {x: 13, y: -4}
+      - {x: 13, y: -3}
+      - {x: 12, y: -3}
+      - {x: 12, y: -2}
+      - {x: 11, y: -2}
+      - {x: 11, y: -1}
+      - {x: 10, y: -1}
+      - {x: 10, y: 0}
+      - {x: 9, y: 0}
+      - {x: 9, y: 1}
+      - {x: 8, y: 1}
+      - {x: 8, y: 2}
+      - {x: 9, y: 2}
+      - {x: 9, y: 5}
+      - {x: 8, y: 5}
+      - {x: 8, y: 9}
+      - {x: 7, y: 9}
+      - {x: 7, y: 10}
+      - {x: 6, y: 10}
+      - {x: 6, y: 15}
+      - {x: 5, y: 15}
+      - {x: 5, y: 16}
+      - {x: -5, y: 16}
+      - {x: -5, y: 15}
+      - {x: -6, y: 15}
+      - {x: -6, y: 11}
+      - {x: -7, y: 11}
+      - {x: -7, y: 10}
+      - {x: -8, y: 10}
+      - {x: -8, y: 9}
+      - {x: -9, y: 9}
+      - {x: -9, y: 6}
+      - {x: -8, y: 6}
+      - {x: -8, y: 3}
+      - {x: -7, y: 3}
+      - {x: -7, y: 2}
+      - {x: -8, y: 2}
+      - {x: -8, y: 1}
+      - {x: -9, y: 1}
+      - {x: -9, y: 0}
+      - {x: -10, y: 0}
+      - {x: -10, y: -1}
+      - {x: -11, y: -1}
+      - {x: -11, y: -2}
+      - {x: -12, y: -2}
+      - {x: -12, y: -3}
+      - {x: -13, y: -3}
+      - {x: -13, y: -4}
+      - {x: -14, y: -4}
+      - {x: -14, y: -5}
+      - {x: -15, y: -5}
+      - {x: -15, y: -11}
+      - {x: -13, y: -11}
+      - {x: -13, y: -10}
+      - {x: -11, y: -10}
+      - {x: -11, y: -9}
+      - {x: -9, y: -9}
+      - {x: -9, y: -8}
+      - {x: -7, y: -8}
+      - {x: -7, y: -7}
+      - {x: -3, y: -7}
+      - {x: -3, y: -13}
+      - {x: -1, y: -13}
+      - {x: -1, y: -12}
+      - {x: 1, y: -12}
+      - {x: 1, y: -13}
+      - {x: 3, y: -13}
+      - {x: 3, y: -7}
+      - {x: 7, y: -7}
+      - {x: 7, y: -8}
+      - {x: 9, y: -8}
+      - {x: 9, y: -9}
+      - {x: 11, y: -9}
+      - {x: 11, y: -10}
+      - {x: 13, y: -10}
+      - {x: 13, y: -11}
+      - {x: 15, y: -11}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -208,8 +542,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 172}
   - name: Frame_4
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -220,7 +554,93 @@ ScriptedImporter:
       height: 48
     spriteID: 2956a9253f1854541b202816aef67a3d
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 15, y: -5}
+      - {x: 14, y: -5}
+      - {x: 14, y: -4}
+      - {x: 13, y: -4}
+      - {x: 13, y: -3}
+      - {x: 12, y: -3}
+      - {x: 12, y: -2}
+      - {x: 11, y: -2}
+      - {x: 11, y: -1}
+      - {x: 10, y: -1}
+      - {x: 10, y: 0}
+      - {x: 9, y: 0}
+      - {x: 9, y: 1}
+      - {x: 8, y: 1}
+      - {x: 8, y: 2}
+      - {x: 9, y: 2}
+      - {x: 9, y: 5}
+      - {x: 8, y: 5}
+      - {x: 8, y: 9}
+      - {x: 7, y: 9}
+      - {x: 7, y: 10}
+      - {x: 6, y: 10}
+      - {x: 6, y: 15}
+      - {x: 5, y: 15}
+      - {x: 5, y: 16}
+      - {x: -5, y: 16}
+      - {x: -5, y: 15}
+      - {x: -6, y: 15}
+      - {x: -6, y: 11}
+      - {x: -7, y: 11}
+      - {x: -7, y: 10}
+      - {x: -8, y: 10}
+      - {x: -8, y: 9}
+      - {x: -9, y: 9}
+      - {x: -9, y: 6}
+      - {x: -8, y: 6}
+      - {x: -8, y: 3}
+      - {x: -7, y: 3}
+      - {x: -7, y: 2}
+      - {x: -8, y: 2}
+      - {x: -8, y: 1}
+      - {x: -9, y: 1}
+      - {x: -9, y: 0}
+      - {x: -10, y: 0}
+      - {x: -10, y: -1}
+      - {x: -11, y: -1}
+      - {x: -11, y: -2}
+      - {x: -12, y: -2}
+      - {x: -12, y: -3}
+      - {x: -13, y: -3}
+      - {x: -13, y: -4}
+      - {x: -14, y: -4}
+      - {x: -14, y: -5}
+      - {x: -15, y: -5}
+      - {x: -15, y: -11}
+      - {x: -13, y: -11}
+      - {x: -13, y: -10}
+      - {x: -11, y: -10}
+      - {x: -11, y: -9}
+      - {x: -9, y: -9}
+      - {x: -9, y: -8}
+      - {x: -7, y: -8}
+      - {x: -7, y: -7}
+      - {x: -3, y: -7}
+      - {x: -3, y: -13}
+      - {x: -1, y: -13}
+      - {x: -1, y: -12}
+      - {x: 1, y: -12}
+      - {x: 1, y: -13}
+      - {x: 3, y: -13}
+      - {x: 3, y: -7}
+      - {x: 7, y: -7}
+      - {x: 7, y: -8}
+      - {x: 9, y: -8}
+      - {x: 9, y: -9}
+      - {x: 11, y: -9}
+      - {x: 11, y: -10}
+      - {x: 13, y: -10}
+      - {x: 13, y: -11}
+      - {x: 15, y: -11}
+    - outline:
+      - {x: -6, y: 6}
+      - {x: -5, y: 6}
+      - {x: -5, y: 9}
+      - {x: -6, y: 9}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -229,8 +649,8 @@ ScriptedImporter:
     uvTransform: {x: 60, y: 4}
   - name: Frame_5
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -241,7 +661,93 @@ ScriptedImporter:
       height: 48
     spriteID: d55ed1887c84b6443969e4eabc503b7e
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 15, y: -5}
+      - {x: 14, y: -5}
+      - {x: 14, y: -4}
+      - {x: 13, y: -4}
+      - {x: 13, y: -3}
+      - {x: 12, y: -3}
+      - {x: 12, y: -2}
+      - {x: 11, y: -2}
+      - {x: 11, y: -1}
+      - {x: 10, y: -1}
+      - {x: 10, y: 0}
+      - {x: 9, y: 0}
+      - {x: 9, y: 1}
+      - {x: 8, y: 1}
+      - {x: 8, y: 2}
+      - {x: 9, y: 2}
+      - {x: 9, y: 5}
+      - {x: 8, y: 5}
+      - {x: 8, y: 9}
+      - {x: 7, y: 9}
+      - {x: 7, y: 10}
+      - {x: 6, y: 10}
+      - {x: 6, y: 15}
+      - {x: 5, y: 15}
+      - {x: 5, y: 16}
+      - {x: -5, y: 16}
+      - {x: -5, y: 15}
+      - {x: -6, y: 15}
+      - {x: -6, y: 11}
+      - {x: -7, y: 11}
+      - {x: -7, y: 10}
+      - {x: -8, y: 10}
+      - {x: -8, y: 9}
+      - {x: -9, y: 9}
+      - {x: -9, y: 6}
+      - {x: -8, y: 6}
+      - {x: -8, y: 3}
+      - {x: -7, y: 3}
+      - {x: -7, y: 2}
+      - {x: -8, y: 2}
+      - {x: -8, y: 1}
+      - {x: -9, y: 1}
+      - {x: -9, y: 0}
+      - {x: -10, y: 0}
+      - {x: -10, y: -1}
+      - {x: -11, y: -1}
+      - {x: -11, y: -2}
+      - {x: -12, y: -2}
+      - {x: -12, y: -3}
+      - {x: -13, y: -3}
+      - {x: -13, y: -4}
+      - {x: -14, y: -4}
+      - {x: -14, y: -5}
+      - {x: -15, y: -5}
+      - {x: -15, y: -11}
+      - {x: -13, y: -11}
+      - {x: -13, y: -10}
+      - {x: -11, y: -10}
+      - {x: -11, y: -9}
+      - {x: -9, y: -9}
+      - {x: -9, y: -8}
+      - {x: -7, y: -8}
+      - {x: -7, y: -7}
+      - {x: -3, y: -7}
+      - {x: -3, y: -13}
+      - {x: -1, y: -13}
+      - {x: -1, y: -12}
+      - {x: 1, y: -12}
+      - {x: 1, y: -13}
+      - {x: 3, y: -13}
+      - {x: 3, y: -7}
+      - {x: 7, y: -7}
+      - {x: 7, y: -8}
+      - {x: 9, y: -8}
+      - {x: 9, y: -9}
+      - {x: 11, y: -9}
+      - {x: 11, y: -10}
+      - {x: 13, y: -10}
+      - {x: 13, y: -11}
+      - {x: 15, y: -11}
+    - outline:
+      - {x: -6, y: 6}
+      - {x: -5, y: 6}
+      - {x: -5, y: 9}
+      - {x: -6, y: 9}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -250,8 +756,8 @@ ScriptedImporter:
     uvTransform: {x: 60, y: 60}
   - name: Frame_6
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -262,7 +768,88 @@ ScriptedImporter:
       height: 48
     spriteID: db870686190cf1f4aae782f00c045e27
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 15, y: -5}
+      - {x: 14, y: -5}
+      - {x: 14, y: -4}
+      - {x: 13, y: -4}
+      - {x: 13, y: -3}
+      - {x: 12, y: -3}
+      - {x: 12, y: -2}
+      - {x: 11, y: -2}
+      - {x: 11, y: -1}
+      - {x: 10, y: -1}
+      - {x: 10, y: 0}
+      - {x: 9, y: 0}
+      - {x: 9, y: 1}
+      - {x: 8, y: 1}
+      - {x: 8, y: 2}
+      - {x: 9, y: 2}
+      - {x: 9, y: 5}
+      - {x: 8, y: 5}
+      - {x: 8, y: 9}
+      - {x: 7, y: 9}
+      - {x: 7, y: 10}
+      - {x: 6, y: 10}
+      - {x: 6, y: 15}
+      - {x: 5, y: 15}
+      - {x: 5, y: 16}
+      - {x: -5, y: 16}
+      - {x: -5, y: 15}
+      - {x: -6, y: 15}
+      - {x: -6, y: 11}
+      - {x: -7, y: 11}
+      - {x: -7, y: 10}
+      - {x: -8, y: 10}
+      - {x: -8, y: 9}
+      - {x: -9, y: 9}
+      - {x: -9, y: 6}
+      - {x: -8, y: 6}
+      - {x: -8, y: 3}
+      - {x: -7, y: 3}
+      - {x: -7, y: 2}
+      - {x: -8, y: 2}
+      - {x: -8, y: 1}
+      - {x: -9, y: 1}
+      - {x: -9, y: 0}
+      - {x: -10, y: 0}
+      - {x: -10, y: -1}
+      - {x: -11, y: -1}
+      - {x: -11, y: -2}
+      - {x: -12, y: -2}
+      - {x: -12, y: -3}
+      - {x: -13, y: -3}
+      - {x: -13, y: -4}
+      - {x: -14, y: -4}
+      - {x: -14, y: -5}
+      - {x: -15, y: -5}
+      - {x: -15, y: -11}
+      - {x: -13, y: -11}
+      - {x: -13, y: -10}
+      - {x: -11, y: -10}
+      - {x: -11, y: -9}
+      - {x: -9, y: -9}
+      - {x: -9, y: -8}
+      - {x: -7, y: -8}
+      - {x: -7, y: -7}
+      - {x: -3, y: -7}
+      - {x: -3, y: -13}
+      - {x: -1, y: -13}
+      - {x: -1, y: -12}
+      - {x: 1, y: -12}
+      - {x: 1, y: -13}
+      - {x: 3, y: -13}
+      - {x: 3, y: -7}
+      - {x: 7, y: -7}
+      - {x: 7, y: -8}
+      - {x: 9, y: -8}
+      - {x: 9, y: -9}
+      - {x: 11, y: -9}
+      - {x: 11, y: -10}
+      - {x: 13, y: -10}
+      - {x: 13, y: -11}
+      - {x: 15, y: -11}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -271,9 +858,9 @@ ScriptedImporter:
     uvTransform: {x: 60, y: 116}
   - name: Frame_7
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 1, w: 0}
     customData: 
     rect:
       serializedVersion: 2
@@ -283,7 +870,12 @@ ScriptedImporter:
       height: 48
     spriteID: 2b7a6f1df044803418f3764dbea0dc59
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 24, y: 24}
+      - {x: -24, y: 24}
+      - {x: -24, y: -24}
+      - {x: 24, y: -24}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -292,8 +884,8 @@ ScriptedImporter:
     uvTransform: {x: 60, y: 172}
   - name: Frame_8
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -304,7 +896,99 @@ ScriptedImporter:
       height: 48
     spriteID: d85f0328b83a82948852b664d91113a6
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 15, y: -5}
+      - {x: 14, y: -5}
+      - {x: 14, y: -4}
+      - {x: 13, y: -4}
+      - {x: 13, y: -3}
+      - {x: 12, y: -3}
+      - {x: 12, y: -2}
+      - {x: 11, y: -2}
+      - {x: 11, y: -1}
+      - {x: 10, y: -1}
+      - {x: 10, y: 0}
+      - {x: 9, y: 0}
+      - {x: 9, y: 1}
+      - {x: 9, y: 1}
+      - {x: 9, y: 1}
+      - {x: 8, y: 1}
+      - {x: 8, y: 3}
+      - {x: 7, y: 3}
+      - {x: 7, y: 4}
+      - {x: 6, y: 4}
+      - {x: 6, y: 6}
+      - {x: 6, y: 9}
+      - {x: 5, y: 9}
+      - {x: 5, y: 10}
+      - {x: 3, y: 10}
+      - {x: 3, y: 11}
+      - {x: 2, y: 11}
+      - {x: 2, y: 12}
+      - {x: 1, y: 12}
+      - {x: 1, y: 13}
+      - {x: -1, y: 13}
+      - {x: -1, y: 12}
+      - {x: -2, y: 12}
+      - {x: -2, y: 11}
+      - {x: -3, y: 11}
+      - {x: -3, y: 10}
+      - {x: -5, y: 10}
+      - {x: -5, y: 9}
+      - {x: -6, y: 9}
+      - {x: -6, y: 5}
+      - {x: -6, y: 5}
+      - {x: -7, y: 5}
+      - {x: -7, y: 5}
+      - {x: -7, y: 4}
+      - {x: -8, y: 4}
+      - {x: -8, y: 3}
+      - {x: -8, y: 3}
+      - {x: -9, y: 3}
+      - {x: -9, y: 3}
+      - {x: -9, y: 2}
+      - {x: -9, y: 2}
+      - {x: -9, y: 1}
+      - {x: -9, y: 1}
+      - {x: -9, y: 0}
+      - {x: -10, y: 0}
+      - {x: -10, y: -1}
+      - {x: -11, y: -1}
+      - {x: -11, y: -2}
+      - {x: -12, y: -2}
+      - {x: -12, y: -3}
+      - {x: -13, y: -3}
+      - {x: -13, y: -4}
+      - {x: -14, y: -4}
+      - {x: -14, y: -5}
+      - {x: -15, y: -5}
+      - {x: -15, y: -11}
+      - {x: -13, y: -11}
+      - {x: -13, y: -10}
+      - {x: -11, y: -10}
+      - {x: -11, y: -9}
+      - {x: -9, y: -9}
+      - {x: -9, y: -8}
+      - {x: -7, y: -8}
+      - {x: -7, y: -7}
+      - {x: -3, y: -7}
+      - {x: -3, y: -13}
+      - {x: -1, y: -13}
+      - {x: -1, y: -12}
+      - {x: 1, y: -12}
+      - {x: 1, y: -13}
+      - {x: 3, y: -13}
+      - {x: 3, y: -7}
+      - {x: 7, y: -7}
+      - {x: 7, y: -8}
+      - {x: 9, y: -8}
+      - {x: 9, y: -9}
+      - {x: 11, y: -9}
+      - {x: 11, y: -10}
+      - {x: 13, y: -10}
+      - {x: 13, y: -11}
+      - {x: 15, y: -11}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -313,8 +997,8 @@ ScriptedImporter:
     uvTransform: {x: 116, y: 4}
   - name: Frame_9
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -325,7 +1009,91 @@ ScriptedImporter:
       height: 48
     spriteID: 661df3c0880955841b4077444f6e7a58
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 15, y: -5}
+      - {x: 14, y: -5}
+      - {x: 14, y: -4}
+      - {x: 13, y: -4}
+      - {x: 13, y: -3}
+      - {x: 12, y: -3}
+      - {x: 12, y: -2}
+      - {x: 11, y: -2}
+      - {x: 11, y: -1}
+      - {x: 10, y: -1}
+      - {x: 10, y: 0}
+      - {x: 9, y: 0}
+      - {x: 9, y: 1}
+      - {x: 9, y: 1}
+      - {x: 9, y: 1}
+      - {x: 8, y: 1}
+      - {x: 8, y: 3}
+      - {x: 8, y: 5}
+      - {x: 7, y: 5}
+      - {x: 7, y: 6}
+      - {x: 6, y: 6}
+      - {x: 6, y: 11}
+      - {x: 5, y: 11}
+      - {x: 5, y: 12}
+      - {x: 1, y: 12}
+      - {x: 1, y: 13}
+      - {x: -1, y: 13}
+      - {x: -1, y: 12}
+      - {x: -5, y: 12}
+      - {x: -5, y: 11}
+      - {x: -6, y: 11}
+      - {x: -6, y: 7}
+      - {x: -7, y: 7}
+      - {x: -7, y: 6}
+      - {x: -8, y: 6}
+      - {x: -8, y: 5}
+      - {x: -9, y: 5}
+      - {x: -9, y: 4}
+      - {x: -9, y: 4}
+      - {x: -9, y: 3}
+      - {x: -9, y: 3}
+      - {x: -9, y: 2}
+      - {x: -8, y: 2}
+      - {x: -8, y: 1}
+      - {x: -9, y: 1}
+      - {x: -9, y: 0}
+      - {x: -10, y: 0}
+      - {x: -10, y: -1}
+      - {x: -11, y: -1}
+      - {x: -11, y: -2}
+      - {x: -12, y: -2}
+      - {x: -12, y: -3}
+      - {x: -13, y: -3}
+      - {x: -13, y: -4}
+      - {x: -14, y: -4}
+      - {x: -14, y: -5}
+      - {x: -15, y: -5}
+      - {x: -15, y: -11}
+      - {x: -13, y: -11}
+      - {x: -13, y: -10}
+      - {x: -11, y: -10}
+      - {x: -11, y: -9}
+      - {x: -9, y: -9}
+      - {x: -9, y: -8}
+      - {x: -7, y: -8}
+      - {x: -7, y: -7}
+      - {x: -3, y: -7}
+      - {x: -3, y: -13}
+      - {x: -1, y: -13}
+      - {x: -1, y: -12}
+      - {x: 1, y: -12}
+      - {x: 1, y: -13}
+      - {x: 3, y: -13}
+      - {x: 3, y: -7}
+      - {x: 7, y: -7}
+      - {x: 7, y: -8}
+      - {x: 9, y: -8}
+      - {x: 9, y: -9}
+      - {x: 11, y: -9}
+      - {x: 11, y: -10}
+      - {x: 13, y: -10}
+      - {x: 13, y: -11}
+      - {x: 15, y: -11}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -334,8 +1102,8 @@ ScriptedImporter:
     uvTransform: {x: 116, y: 60}
   - name: Frame_10
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -346,7 +1114,89 @@ ScriptedImporter:
       height: 48
     spriteID: 5daf848d4213a204eba9974e58f108f4
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 15, y: -5}
+      - {x: 14, y: -5}
+      - {x: 14, y: -4}
+      - {x: 13, y: -4}
+      - {x: 13, y: -3}
+      - {x: 12, y: -3}
+      - {x: 12, y: -2}
+      - {x: 11, y: -2}
+      - {x: 11, y: -1}
+      - {x: 10, y: -1}
+      - {x: 10, y: 0}
+      - {x: 9, y: 0}
+      - {x: 9, y: 1}
+      - {x: 9, y: 1}
+      - {x: 9, y: 2}
+      - {x: 9, y: 3}
+      - {x: 8, y: 3}
+      - {x: 8, y: 5}
+      - {x: 8, y: 7}
+      - {x: 7, y: 7}
+      - {x: 7, y: 8}
+      - {x: 6, y: 8}
+      - {x: 6, y: 13}
+      - {x: 5, y: 13}
+      - {x: 5, y: 14}
+      - {x: -5, y: 14}
+      - {x: -5, y: 13}
+      - {x: -6, y: 13}
+      - {x: -6, y: 11}
+      - {x: -6, y: 9}
+      - {x: -7, y: 9}
+      - {x: -7, y: 8}
+      - {x: -8, y: 8}
+      - {x: -8, y: 7}
+      - {x: -9, y: 7}
+      - {x: -9, y: 4}
+      - {x: -8, y: 4}
+      - {x: -8, y: 3}
+      - {x: -7, y: 3}
+      - {x: -7, y: 2}
+      - {x: -8, y: 2}
+      - {x: -8, y: 1}
+      - {x: -9, y: 1}
+      - {x: -9, y: 0}
+      - {x: -10, y: 0}
+      - {x: -10, y: -1}
+      - {x: -11, y: -1}
+      - {x: -11, y: -2}
+      - {x: -12, y: -2}
+      - {x: -12, y: -3}
+      - {x: -13, y: -3}
+      - {x: -13, y: -4}
+      - {x: -14, y: -4}
+      - {x: -14, y: -5}
+      - {x: -15, y: -5}
+      - {x: -15, y: -11}
+      - {x: -13, y: -11}
+      - {x: -13, y: -10}
+      - {x: -11, y: -10}
+      - {x: -11, y: -9}
+      - {x: -9, y: -9}
+      - {x: -9, y: -8}
+      - {x: -7, y: -8}
+      - {x: -7, y: -7}
+      - {x: -3, y: -7}
+      - {x: -3, y: -13}
+      - {x: -1, y: -13}
+      - {x: -1, y: -12}
+      - {x: 1, y: -12}
+      - {x: 1, y: -13}
+      - {x: 3, y: -13}
+      - {x: 3, y: -7}
+      - {x: 7, y: -7}
+      - {x: 7, y: -8}
+      - {x: 9, y: -8}
+      - {x: 9, y: -9}
+      - {x: 11, y: -9}
+      - {x: 11, y: -10}
+      - {x: 13, y: -10}
+      - {x: 13, y: -11}
+      - {x: 15, y: -11}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -355,8 +1205,8 @@ ScriptedImporter:
     uvTransform: {x: 116, y: 116}
   - name: Frame_11
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -367,7 +1217,88 @@ ScriptedImporter:
       height: 48
     spriteID: 50d182f306f91a2409f982c9582f0112
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 15, y: -5}
+      - {x: 14, y: -5}
+      - {x: 14, y: -4}
+      - {x: 13, y: -4}
+      - {x: 13, y: -3}
+      - {x: 12, y: -3}
+      - {x: 12, y: -2}
+      - {x: 11, y: -2}
+      - {x: 11, y: -1}
+      - {x: 10, y: -1}
+      - {x: 10, y: 0}
+      - {x: 9, y: 0}
+      - {x: 9, y: 1}
+      - {x: 8, y: 1}
+      - {x: 8, y: 2}
+      - {x: 9, y: 2}
+      - {x: 9, y: 5}
+      - {x: 8, y: 5}
+      - {x: 8, y: 9}
+      - {x: 7, y: 9}
+      - {x: 7, y: 10}
+      - {x: 6, y: 10}
+      - {x: 6, y: 15}
+      - {x: 5, y: 15}
+      - {x: 5, y: 16}
+      - {x: -5, y: 16}
+      - {x: -5, y: 15}
+      - {x: -6, y: 15}
+      - {x: -6, y: 11}
+      - {x: -7, y: 11}
+      - {x: -7, y: 10}
+      - {x: -8, y: 10}
+      - {x: -8, y: 9}
+      - {x: -9, y: 9}
+      - {x: -9, y: 6}
+      - {x: -8, y: 6}
+      - {x: -8, y: 3}
+      - {x: -7, y: 3}
+      - {x: -7, y: 2}
+      - {x: -8, y: 2}
+      - {x: -8, y: 1}
+      - {x: -9, y: 1}
+      - {x: -9, y: 0}
+      - {x: -10, y: 0}
+      - {x: -10, y: -1}
+      - {x: -11, y: -1}
+      - {x: -11, y: -2}
+      - {x: -12, y: -2}
+      - {x: -12, y: -3}
+      - {x: -13, y: -3}
+      - {x: -13, y: -4}
+      - {x: -14, y: -4}
+      - {x: -14, y: -5}
+      - {x: -15, y: -5}
+      - {x: -15, y: -11}
+      - {x: -13, y: -11}
+      - {x: -13, y: -10}
+      - {x: -11, y: -10}
+      - {x: -11, y: -9}
+      - {x: -9, y: -9}
+      - {x: -9, y: -8}
+      - {x: -7, y: -8}
+      - {x: -7, y: -7}
+      - {x: -3, y: -7}
+      - {x: -3, y: -13}
+      - {x: -1, y: -13}
+      - {x: -1, y: -12}
+      - {x: 1, y: -12}
+      - {x: 1, y: -13}
+      - {x: 3, y: -13}
+      - {x: 3, y: -7}
+      - {x: 7, y: -7}
+      - {x: 7, y: -8}
+      - {x: 9, y: -8}
+      - {x: 9, y: -9}
+      - {x: 11, y: -9}
+      - {x: 11, y: -10}
+      - {x: 13, y: -10}
+      - {x: 13, y: -11}
+      - {x: 15, y: -11}
     vertices: []
     spritePhysicsOutline: []
     indices: 
@@ -501,6 +1432,42 @@ ScriptedImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
     crunchedCompression: 0

@@ -1,18 +1,23 @@
 using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 public class EnemyStats : MonoBehaviour
 {
 
-    [Header("Scripts")]
+    [Header("GameObjects")]
     public GameObject Health;
+    public GameObject InvulnBuff;
+    public GameObject MultiBuff;
+    public GameObject GigaBuff;
 
     [Header("Enemy Stats")]
     public float enemyHealth = 10f;   // Initial health of the enemy
     public float HealthInc = 10f;
     public float DeathAnim = 5f;
     public float KillTime = 50f;
+    public float Pspawn;
 
     [Header("Timer Incriments")]
     public float incrementInterval = 10f;  // Time interval to increment stats (1 minute)
@@ -20,6 +25,10 @@ public class EnemyStats : MonoBehaviour
 
     [Header("Death")]
     public GameObject Death;
+
+    [Header("PowerUp Bounds")]
+    public int Lower = 1;
+    public int Upper = 3;
 
     public void Start()
     {
@@ -56,14 +65,35 @@ public class EnemyStats : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy defeated!");
-
         this.gameObject.GetComponent<EnemyStats>().enabled = false;
         this.GetComponent<SpriteRenderer>().enabled = false;
         Death.SetActive(true);
+        Drop();
         Destroy(gameObject, DeathAnim); // Destroy enemy when health reaches zero
+        
     }
 
+    private void Drop()
+    {
+        Pspawn += UnityEngine.Random.Range(1, 9);
+        Debug.Log("Number Generated!");
 
+        //Pspawn += 1; Test Value
+
+        if(Pspawn == 1)
+        {
+            Instantiate(InvulnBuff, transform.position, Quaternion.identity);
+        }
+        if (Pspawn == 3)
+        {
+            Instantiate(MultiBuff, transform.position, Quaternion.identity);
+        }
+        if (Pspawn == 6)
+        {
+            Instantiate(GigaBuff, transform.position, Quaternion.identity);
+        }
+
+    }
 
     public void UpdateHealth()
     {
