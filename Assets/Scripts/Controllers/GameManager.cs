@@ -21,15 +21,34 @@ public class GameManager : SingletonMonoBehavior<GameManager>
         currentLives = PlayerPrefs.GetInt("Lives", maxLives);  // Default to maxLives if not set
         point = PlayerPrefs.GetInt("Score", 0);
         lifecounter.UpdateLife(currentLives);
-      
+      //  scoreCounter.UpdatePoint(point);
     }
     public void IncreasePoint()
     {
         point++;
+      //  scoreCounter.UpdatePoint(point);
         Debug.Log("Score: " + point);
         SaveGame();
 
     }
+
+   /* private void OnEnable()
+    {
+        InputManager.Instance.OnFire.AddListener(FireBullet);
+        //bullet.ResetBullet();
+        totalBrickCount = bricksContainer.childCount;
+        currentBrickCount = bricksContainer.childCount;
+    }
+
+    private void OnDisable()
+    {
+        InputManager.Instance.OnFire.RemoveListener(FireBullet);
+    }
+
+    private void FireBullet()
+    {
+        bullet.FireBullet();
+    }*/
 
     public void SaveGame()
     {

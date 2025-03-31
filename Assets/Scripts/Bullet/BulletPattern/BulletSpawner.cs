@@ -21,7 +21,7 @@ public class BulletSpawner : MonoBehaviour
         timer += Time.deltaTime;
         if (spawnerType == SpawnerType.Spin)
             transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z + 1f);
-            Debug.Log("Spawner Rotation: " + transform.rotation.eulerAngles);
+
         if (timer >= firingRate)
         {
             Fire();
@@ -33,12 +33,10 @@ public class BulletSpawner : MonoBehaviour
     {
         if (bullet)
         {
-            spawnedBullet = Instantiate(bullet, transform.position, transform.rotation);
-            Debug.Log("Bullet Spawned at Position: " + spawnedBullet.transform.position);
-            Debug.Log("Bullet Rotation: " + spawnedBullet.transform.rotation.eulerAngles);
-
+            spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
             spawnedBullet.GetComponent<EBullet>().speed = speed;
             spawnedBullet.GetComponent<EBullet>().bulletLife = bulletLife;
+            spawnedBullet.transform.rotation = transform.rotation;
         }
     }
 }

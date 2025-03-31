@@ -5,16 +5,7 @@ public class InputManager : SingletonMonoBehavior<InputManager>
 {
     public UnityEvent<Vector2> OnMove = new UnityEvent<Vector2>();
     public UnityEvent OnFire;
-    private PauseMenuController pauseMenuController;
 
-    void Start()
-    {
-        pauseMenuController = FindObjectOfType<PauseMenuController>();
-        if (pauseMenuController == null)
-        {
-            Debug.LogError("No PauseMenuController found in the scene.");
-        }
-    }
 
     void Update()
     {
@@ -22,14 +13,11 @@ public class InputManager : SingletonMonoBehavior<InputManager>
         if (Input.GetKey(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             OnFire?.Invoke();
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayLaserSFX();
+            }
         }
-
-        if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("Pause key pressed");
-            pauseMenuController.TogglePause();
-        }
-
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             input += Vector2.up;
