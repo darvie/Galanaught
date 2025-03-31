@@ -80,11 +80,11 @@ public class EnemyStats : MonoBehaviour
             Debug.Log("Number Generated!");
 
 
-            if (Pspawn == 1)
+            if (Pspawn == 1 || Pspawn == 4)
             {
                 Instantiate(InvulnBuff, transform.position, Quaternion.identity);
             }
-            else if (Pspawn == 3)
+            else if (Pspawn == 3 || Pspawn == 7)
             {
                 Instantiate(MultiBuff, transform.position, Quaternion.identity);
             }
@@ -92,7 +92,7 @@ public class EnemyStats : MonoBehaviour
             {
                 Instantiate(GigaBuff, transform.position, Quaternion.identity);
             }
-            else if (Pspawn == 9)
+            else if (Pspawn == 9 || Pspawn == 2 || Pspawn == 5)
             {
                 Instantiate(Health, transform.position, Quaternion.identity);
             }

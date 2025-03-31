@@ -605,7 +605,7 @@ MonoBehaviour:
   bulletLife: 5
   speed: 5
   spawnerType: 0
-  firingRate: 0.6
+  firingRate: 0.8
 --- !u!1 &2121134385308436062
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,6 +983,7 @@ MonoBehaviour:
   incrementInterval: 10
   Counter: 0
   Death: {fileID: 8682197552676675368}
+  Dead: 0
 --- !u!114 &4352060126720055612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,7 +1356,7 @@ MonoBehaviour:
   bulletLife: 5
   speed: 3
   spawnerType: 0
-  firingRate: 0.6
+  firingRate: 0.8
 --- !u!1 &4548426847537348709
 GameObject:
   m_ObjectHideFlags: 0
