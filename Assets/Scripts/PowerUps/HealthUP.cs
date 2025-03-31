@@ -13,5 +13,9 @@ public class HealthUP : MonoBehaviour
             other.gameObject.GetComponent<PlayerController>().HEALPOWERUP();
             Destroy(this.gameObject);
         }
+        if (other.gameObject.CompareTag("Wall"))
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

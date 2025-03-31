@@ -10,6 +10,7 @@ public class EnemyStats : MonoBehaviour
     public GameObject InvulnBuff;
     public GameObject MultiBuff;
     public GameObject GigaBuff;
+    public GameObject HEALING;
 
     [Header("Enemy Stats")]
     public float enemyHealth = 10f;   // Initial health of the enemy
@@ -25,8 +26,9 @@ public class EnemyStats : MonoBehaviour
     [Header("Death")]
     public GameObject Death;
 
-    [Header("IsDead?")]
+    [Header("Booleans")]
     public bool Dead;
+    public bool chosen = false;
 
     public void Start()
     {
@@ -64,6 +66,7 @@ public class EnemyStats : MonoBehaviour
     {
         Debug.Log("Enemy defeated!");
         AudioManager.Instance.PlayExplosionSFX();
+        Shake.Instance.StartShake();
 
         this.gameObject.GetComponent<EnemyStats>().enabled = false;
         this.GetComponent<SpriteRenderer>().enabled = false;
@@ -76,25 +79,33 @@ public class EnemyStats : MonoBehaviour
     {
         if (Dead == true)
         {
-            Pspawn += UnityEngine.Random.Range(1, 9);
-            Debug.Log("Number Generated!");
+            if (chosen == false)
+            {
+                Pspawn += UnityEngine.Random.Range(1, 9);
+                chosen = true;
+                Debug.Log("Number Generated!");
+            }
+            
 
-
-            if (Pspawn == 1)
+            if (Pspawn == 1 || Pspawn == 4)
             {
                 Instantiate(InvulnBuff, transform.position, Quaternion.identity);
+                chosen = false;
             }
-            else if (Pspawn == 3)
+            else if (Pspawn == 3 || Pspawn == 7)
             {
                 Instantiate(MultiBuff, transform.position, Quaternion.identity);
+                chosen = false;
             }
             else if (Pspawn == 6)
             {
                 Instantiate(GigaBuff, transform.position, Quaternion.identity);
+                chosen = false;
             }
-            else if (Pspawn == 9)
+            else if (Pspawn == 9 || Pspawn == 2 || Pspawn == 5)
             {
-                Instantiate(Health, transform.position, Quaternion.identity);
+                Instantiate(HEALING, transform.position, Quaternion.identity);
+                chosen = false;
             }
         }
     }
