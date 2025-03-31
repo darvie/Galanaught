@@ -8,6 +8,7 @@ public class PauseMenuController : MonoBehaviour
 {
     public GameObject pauseMenu;
     public bool isPaused;
+    public AudioManager AudioManager;
 
     void Start()
     {
@@ -42,7 +43,7 @@ public class PauseMenuController : MonoBehaviour
     }
 
     public void ResumeGame()
-    {
+    {   
         Debug.Log("Game Resumed");
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
@@ -55,5 +56,6 @@ public class PauseMenuController : MonoBehaviour
         Debug.Log("Loading Main Menu");
         SceneManager.LoadScene("Main Menu");
         Time.timeScale = 1f;
+        AudioManager.PlayMainMenuMusic();
     }
 }
