@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour
     public Sprite Damaged;
     public Sprite Dead;
 
+    [Header("PowerUP States")]
+    public GameObject Multi;
+    public GameObject Giga;
+
     [Header("Invuln Shield")]
     public GameObject Shield;
 
@@ -67,6 +71,20 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void InvulPowerUp()
+    {
+        StartCoroutine (InvulnUP());
+    }
+
+    public void MultiPowerUp()
+    {
+        StartCoroutine(MultiShotUP());
+    }
+
+    public void GigaUP()
+    {
+        StartCoroutine(GigaShotUP());
+    }
     IEnumerator Invuln()
     {
         Shield.SetActive(true);
@@ -79,6 +97,32 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    IEnumerator InvulnUP()
+    {
+        Shield.SetActive(true);
+        Physics2D.IgnoreLayerCollision(0, 6, true);
+        Debug.Log("I AM GOD!");
+        yield return new WaitForSeconds(4);
+        Physics2D.IgnoreLayerCollision(0, 6, false);
+        Shield.SetActive(false);
+    }
+
+    IEnumerator MultiShotUP()
+    {
+        Multi.SetActive(true);
+        Debug.Log("I AM GOD!");
+        yield return new WaitForSeconds(4);
+        Multi.SetActive(false);
+    }
+
+    IEnumerator GigaShotUP()
+    {
+        Giga.SetActive(true);
+        Debug.Log("I AM GOD!");
+        yield return new WaitForSeconds(4);
+        Giga.SetActive(false);
+
+    }
     void Die()
     {
         AudioManager.Instance.PlayDefeatMusic();
