@@ -20,8 +20,10 @@ public class PlayerController : MonoBehaviour
     public Sprite Damaged;
     public Sprite Dead;
 
-    [Header("Invuln Shield")]
+    [Header("PowerUps")]
     public GameObject Shield;
+    public GameObject Multi;
+    public GameObject Giga;
 
     [Header("Bullet")]
     public GameObject bulletPrefab;
@@ -67,6 +69,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void InvulnPowerUp()
+    {
+        StartCoroutine(InvulnUP());
+    }
+
+    public void MultiPowerUp()
+    {
+        StartCoroutine(MultiUp());
+    }
+
+    public void GigaPowerUp()
+    {
+        StartCoroutine(GigaUP());
+    }
+
     IEnumerator Invuln()
     {
         Shield.SetActive(true);
@@ -77,6 +94,32 @@ public class PlayerController : MonoBehaviour
         Shield.SetActive(false);
         
 
+    }
+
+    IEnumerator InvulnUP()
+    {
+        Shield.SetActive(true);
+        Physics2D.IgnoreLayerCollision(0, 6, true);
+        Debug.Log("I AM GOD!");
+        yield return new WaitForSeconds(4);
+        Physics2D.IgnoreLayerCollision(0, 6, false);
+        Shield.SetActive(false);
+
+
+    }
+
+    IEnumerator MultiUp()
+    {
+        Multi.SetActive(true);
+        yield return new WaitForSeconds(10);
+        Multi.SetActive(false);
+    }
+
+    IEnumerator GigaUP()
+    {
+        Giga.SetActive(true);
+        yield return new WaitForSeconds(3);
+        Giga.SetActive(false);
     }
 
     void Die()
