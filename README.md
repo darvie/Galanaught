@@ -47,7 +47,7 @@ Players earn points by defeating enemies and their score multiplier increases as
 - SwissArcadeGameEntertainment
 
   
-### Art
+#### Art
 - Foozle (compiled assets) https://foozlecc.itch.io
 - Chroma Dave (created Assets) https://x.com/chroma_dave
 
