@@ -51,9 +51,3 @@ Players earn points by defeating enemies and their score multiplier increases as
 - Foozle (compiled assets) https://foozlecc.itch.io
 - Chroma Dave (created Assets) https://x.com/chroma_dave
 
-
-
-  ### Art
-  Foozle For Releasing the art we used for assets https://foozlecc.itch.io
-  Chroma Dave for creation of assets - https://x.com/chroma_dave
-
