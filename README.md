@@ -1,6 +1,9 @@
 # Galanaught Infinite
 We wanted to create a Galaga-like game but with bullet hell mechanics, endless mode with timer, and powerups.
 
+## Play on Itch.io
+https://graves067.itch.io/galanaught
+
 ### Team Name:
 Graves Squad
 
