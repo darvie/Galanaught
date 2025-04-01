@@ -64,6 +64,7 @@ public class EnemyStats : MonoBehaviour
     {
         Debug.Log("Enemy defeated!");
         AudioManager.Instance.PlayExplosionSFX();
+        Shake.Instance.StartShake();
 
         this.gameObject.GetComponent<EnemyStats>().enabled = false;
         this.GetComponent<SpriteRenderer>().enabled = false;
