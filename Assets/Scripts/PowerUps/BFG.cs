@@ -40,6 +40,7 @@ public class BFG : MonoBehaviour
 
             other.gameObject.GetComponent<EnemyStats>().TakeDamage(3000);
             Destroy(gameObject);
+            AudioManager.Instance.PlayExplosionSFX();
         }
 
         if (other.gameObject.CompareTag("Wall"))

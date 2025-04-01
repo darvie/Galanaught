@@ -6,10 +6,11 @@ public class HealthUP : MonoBehaviour
     {
         //Debug.Log($"collided with{other.gameObject.name}");
 
-        AudioManager.Instance.PlayPowerUpInvulnerabilitySFX();
 
         if (other.gameObject.CompareTag("Player"))
         {
+            AudioManager.Instance.PlayPowerUpInvulnerabilitySFX();
+
             other.gameObject.GetComponent<PlayerController>().HEALPOWERUP();
             Destroy(this.gameObject);
         }
