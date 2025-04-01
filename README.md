@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2260df7f-5eb1-4059-a63b-f2f3c5740102)# Galanaught Infinite
+# Galanaught Infinite
 We wanted to create a Galaga-like game but with bullet hell mechanics, endless mode with timer, and powerups.
 
 ### Team Name:
