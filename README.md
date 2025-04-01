@@ -27,6 +27,15 @@ The game will feature 1 handcrafted endless mode while the enemy spawns will be 
 ## Scoring & Win/Loss Conditions
 Players earn points by defeating enemies and their score multiplier increases as time goes by, the game ends when all lives are expended and the players' time and score are shown to the player prompting them to restart or leave the game.
 
+## Team Contributions
+![Cameron Gillespie](https://youtu.be/KKEjcHojaT0)
+![Sam]()
+![Darvesh]()
+
+
+## Gamplay Video/Trailer
+![Trailer]()
+
 ### Attributions
 #### Sound
 - Music by NineThree01 at OpenGameArt.org
