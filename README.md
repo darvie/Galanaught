@@ -49,7 +49,7 @@ Players earn points by defeating enemies and their score multiplier increases as
 - [bullets fire](https://github.com/darvie/Galanaught/commit/51ff9995c2242a4433820136a52304e6f6f8254e)
   
 ##### Sam
-- [Sams Contribution Videos]
+- Sams Contribution Videos
   - https://youtu.be/wYEanpbYaLA
   - https://youtu.be/SBjL43mfw9I
   - https://youtu.be/G8YjE80IzI8
