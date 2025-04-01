@@ -53,19 +53,19 @@ Players earn points by defeating enemies and their score multiplier increases as
   - https://youtu.be/wYEanpbYaLA
   - https://youtu.be/SBjL43mfw9I
   - https://youtu.be/G8YjE80IzI8
-- [build profile and canvas scaling] (https://github.com/darvie/Galanaught/pull/63)
-- [power up bug fix] (https://github.com/darvie/Galanaught/pull/59)
-- [health power-up bug fix] (https://github.com/darvie/Galanaught/pull/55)
-- [bullet bug fix] (https://github.com/darvie/Galanaught/pull/44)
-- [Pause menu] (https://github.com/darvie/Galanaught/pull/43)
-- [Timer and kill counter] (https://github.com/darvie/Galanaught/pull/37)
-- [play area design] (https://github.com/darvie/Galanaught/pull/27)
-- [player shooting] (https://github.com/darvie/Galanaught/pull/26)
-- [main menu design] (https://github.com/darvie/Galanaught/pull/25)
-- [colour and background design] (https://github.com/darvie/Galanaught/pull/22)
-- [walls] (https://github.com/darvie/Galanaught/pull/17)
-- [level design] (https://github.com/darvie/Galanaught/pull/16)
-- [player movement] (https://github.com/darvie/Galanaught/pull/2)
+- [build profile and canvas scaling](https://github.com/darvie/Galanaught/pull/63)
+- [power up bug fix](https://github.com/darvie/Galanaught/pull/59)
+- [health power-up bug fix](https://github.com/darvie/Galanaught/pull/55)
+- [bullet bug fix](https://github.com/darvie/Galanaught/pull/44)
+- [Pause menu](https://github.com/darvie/Galanaught/pull/43)
+- [Timer and kill counter](https://github.com/darvie/Galanaught/pull/37)
+- [play area design](https://github.com/darvie/Galanaught/pull/27)
+- [player shooting](https://github.com/darvie/Galanaught/pull/26)
+- [main menu design](https://github.com/darvie/Galanaught/pull/25)
+- [colour and background design](https://github.com/darvie/Galanaught/pull/22)
+- [walls](https://github.com/darvie/Galanaught/pull/17)
+- [level design](https://github.com/darvie/Galanaught/pull/16)
+- [player movement](https://github.com/darvie/Galanaught/pull/2)
 - 
 
 ##### Darvesh
