@@ -1,4 +1,4 @@
-# Galanaught Infinite
+![image](https://github.com/user-attachments/assets/2260df7f-5eb1-4059-a63b-f2f3c5740102)# Galanaught Infinite
 We wanted to create a Galaga-like game but with bullet hell mechanics, endless mode with timer, and powerups.
 
 ### Team Name:
@@ -49,6 +49,22 @@ Players earn points by defeating enemies and their score multiplier increases as
 - [bullets fire](https://github.com/darvie/Galanaught/commit/51ff9995c2242a4433820136a52304e6f6f8254e)
   
 ##### Sam
+- [Sams Contribution Videos] https://youtu.be/wYEanpbYaLA, https://youtu.be/SBjL43mfw9I, https://youtu.be/G8YjE80IzI8
+- [build profile and canvas scaling] https://github.com/darvie/Galanaught/pull/63
+- [power up bug fix] https://github.com/darvie/Galanaught/pull/59
+- [health power up bug fix] https://github.com/darvie/Galanaught/pull/55
+- [bullet bug fix] https://github.com/darvie/Galanaught/pull/44
+- [Pause menu] https://github.com/darvie/Galanaught/pull/43
+- [Timer and kill counter] https://github.com/darvie/Galanaught/pull/37
+- [play area design] https://github.com/darvie/Galanaught/pull/27
+- [player shooting] https://github.com/darvie/Galanaught/pull/26
+- [main menu design] https://github.com/darvie/Galanaught/pull/25
+- [colour and background design] https://github.com/darvie/Galanaught/pull/22
+- [walls] https://github.com/darvie/Galanaught/pull/17
+- [level design] https://github.com/darvie/Galanaught/pull/16
+- [player movement] https://github.com/darvie/Galanaught/pull/2
+- 
+
 ##### Darvesh
 - [Darvesh's Video Contribution](DarveshVideoContribution.mp4)
 - [Implementing Screen Shake](https://github.com/darvie/Galanaught/commit/48beb1d561194054f3f367b10956feb2fa74c666)
