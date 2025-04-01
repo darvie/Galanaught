@@ -66,16 +66,19 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     public void PlayMainMenuMusic()
     {
         PlayPlaylist(mainMenuMusic);
+        Debug.Log("Playing Main Menu Music");
     }
 
     public void PlayGameplayMusic()
     {
         PlayPlaylist(gameplayMusic);
+        Debug.Log("Playing Gameplay Music");
     }
 
     public void PlayBossBattleMusic()
     {
         PlayPlaylist(bossBattleMusic);
+        Debug.Log("Playing Boss Battle Music");
     }
     public void PlayDefeatSFX()
     {

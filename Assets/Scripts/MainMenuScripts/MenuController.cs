@@ -39,6 +39,8 @@ public class MenuController : MonoBehaviour
     public void NewGameDialogYes()
     {
         SceneManager.LoadScene(_newGameLevel);
+        audioManager.PlayGameplayMusic();
+        Debug.Log("Playing Gameplay Music");
     }
 
     public void PlayGame()
