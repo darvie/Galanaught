@@ -9,7 +9,7 @@ public class InputManager : SingletonMonoBehavior<InputManager>
 
     void Start()
     {
-        pauseMenuController = FindObjectOfType<PauseMenuController>();
+        pauseMenuController = FindAnyObjectByType<PauseMenuController>();
         if (pauseMenuController == null)
         {
             Debug.LogError("No PauseMenuController found in the scene.");
