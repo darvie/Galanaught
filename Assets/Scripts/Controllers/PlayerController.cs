@@ -72,6 +72,7 @@ public class PlayerController : MonoBehaviour
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Dead;
             Debug.Log("DEATH SPRITE!");
+            // AudioManager.Instance.PlayDefeatSFX();
             Die();
         }
     }
@@ -153,7 +154,7 @@ public class PlayerController : MonoBehaviour
 
     void Die()
     {
-        AudioManager.Instance.PlayDefeatMusic();
+        AudioManager.Instance.PlayDefeatSFX();
         Debug.Log("Player defeated!");
         this.gameObject.GetComponent<PlayerController>().enabled = false;
         Destroy(gameObject,3f); // Destroy player when Lives reaches zero

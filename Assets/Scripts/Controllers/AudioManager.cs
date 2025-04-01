@@ -10,7 +10,7 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     [SerializeField] public AudioClip[] mainMenuMusic;
     [SerializeField] public AudioClip[] gameplayMusic;
     [SerializeField] public AudioClip ButtonClick; //Blasteriods-sfx bullet-laser
-    [SerializeField] public AudioClip defeatMusic; //Defeat Defeated
+    [SerializeField] public AudioClip DefeatSFX; //Defeat Defeated
     [SerializeField] public AudioClip levelUpMusic;
     [SerializeField] public AudioClip laserBulletSFX; //Bullet SFX SFX_15c
     [SerializeField] public AudioClip BulletSFX; //Bullet-Explosion-PowerUpSFX Shoot
@@ -28,6 +28,7 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     protected override void Awake()
     {
         base.Awake();
+        Debug.Log("AudioManager Awake is called");
         if (Instance == this)
         {
             DontDestroyOnLoad(gameObject);
@@ -65,30 +66,30 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     public void PlayMainMenuMusic()
     {
         PlayPlaylist(mainMenuMusic);
+        Debug.Log("Playing Main Menu Music");
     }
 
     public void PlayGameplayMusic()
     {
         PlayPlaylist(gameplayMusic);
+        Debug.Log("Playing Gameplay Music");
     }
 
     public void PlayBossBattleMusic()
     {
         PlayPlaylist(bossBattleMusic);
+        Debug.Log("Playing Boss Battle Music");
     }
-    public void PlayDefeatMusic()
+    public void PlayDefeatSFX()
     {
-        if (musicSource == null || defeatMusic == null) return;
 
-        musicSource.Stop();
-        musicSource.clip = defeatMusic;
-        musicSource.loop = false; // No looping for defeat sound
-        musicSource.Play();
+        if (sfxSource == null || DefeatSFX == null) return;
+        sfxSource.PlayOneShot(DefeatSFX);
     }
     public void PlayButtonClicks()
     {
 
-        if (sfxSource == null || laserBulletSFX == null) return;
+        if (sfxSource == null || ButtonClick == null) return;
         sfxSource.PlayOneShot(ButtonClick);
     }
 
@@ -113,32 +114,32 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     public void PlayBossExplosionSFX()
     {
 
-        if (sfxSource == null || explosionSFX == null) return;
-        sfxSource.PlayOneShot(explosionSFX);
+        if (sfxSource == null || BossExplosionSFX == null) return;
+        sfxSource.PlayOneShot(BossExplosionSFX);
     }
     public void PlayPlayerHitSFX()
     {
 
-        if (sfxSource == null || explosionSFX == null) return;
-        sfxSource.PlayOneShot(explosionSFX);
+        if (sfxSource == null || PlayerHitSFX == null) return;
+        sfxSource.PlayOneShot(PlayerHitSFX);
     }
     public void PlayPowerUpInvulnerabilitySFX()
     {
 
-        if (sfxSource == null || explosionSFX == null) return;
-        sfxSource.PlayOneShot(explosionSFX);
+        if (sfxSource == null || PowerUpInvulnerabilitySFX == null) return;
+        sfxSource.PlayOneShot(PowerUpInvulnerabilitySFX);
     }
     public void PlayPowerUpGigaSFX()
     {
 
-        if (sfxSource == null || explosionSFX == null) return;
-        sfxSource.PlayOneShot(explosionSFX);
+        if (sfxSource == null || PowerUpGigaSFX == null) return;
+        sfxSource.PlayOneShot(PowerUpGigaSFX);
     }
     public void PlayPowerUpMultiShotSFX()
     {
 
-        if (sfxSource == null || explosionSFX == null) return;
-        sfxSource.PlayOneShot(explosionSFX);
+        if (sfxSource == null || PowerUpMultiShotSFX == null) return;
+        sfxSource.PlayOneShot(PowerUpMultiShotSFX);
     }
 
     private void PlayPlaylist(AudioClip[] playlist)

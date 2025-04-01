@@ -672,7 +672,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6422285360764129822, guid: 037117e2b508d0340afc104862af38e6, type: 3}
   m_PrefabInstance: {fileID: 3867002170503812469}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 628095546}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b41269a2f5010848af1e09192d3a202, type: 3}
@@ -934,7 +934,7 @@ MonoBehaviour:
   volumeSliderValue: {fileID: 1532444363}
   confirmationPrompt: {fileID: 325583672}
   _newGameLevel: Endless Mode
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 363769898}
 --- !u!4 &598935651
 Transform:
   m_ObjectHideFlags: 0
@@ -950,6 +950,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &628095546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3083765118012120461, guid: 037117e2b508d0340afc104862af38e6, type: 3}
+  m_PrefabInstance: {fileID: 3867002170503812469}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &639270819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,13 +1725,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1560259986}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
+      - m_Target: {fileID: 363769898}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayGameplayMusic
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: d7a685e9c41d32846946085b26cb8fd2, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1744,13 +1749,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 363769898}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayGameplayMusic
+      - m_Target: {fileID: 628095546}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2585,11 +2590,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547265873}
   m_CullTransparentMesh: 1
---- !u!82 &1560259986 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2953395625259511235, guid: 037117e2b508d0340afc104862af38e6, type: 3}
-  m_PrefabInstance: {fileID: 3867002170503812469}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1577082474
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,6 +3528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6422285360764129822, guid: 037117e2b508d0340afc104862af38e6, type: 3}
+      propertyPath: DefeatSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: db77f89f722c4d940b86421dc685e80c, type: 3}
     - target: {fileID: 6422285360764129822, guid: 037117e2b508d0340afc104862af38e6, type: 3}
       propertyPath: ButtonClick
       value: 
