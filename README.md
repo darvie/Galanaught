@@ -28,9 +28,21 @@ The game will feature 1 handcrafted endless mode while the enemy spawns will be 
 Players earn points by defeating enemies and their score multiplier increases as time goes by, the game ends when all lives are expended and the players' time and score are shown to the player prompting them to restart or leave the game.
 
 ## Team Contributions
-- Cameron Gillespie https://youtu.be/KKEjcHojaT0
-![Sam]()
-![Darvesh](DarveshVideoContribution.mp4)
+##### Cameron Gillespie 
+- https://youtu.be/KKEjcHojaT0
+##### Sam
+##### Darvesh
+- [Darvesh's Video Contribution](DarveshVideoContribution.mp4)
+- [Implementing Screen Shake](https://github.com/darvie/Galanaught/commit/48beb1d561194054f3f367b10956feb2fa74c666)
+- [Settings/Audio Settings](https://github.com/darvie/Galanaught/commit/4b3189c1c4402ffe4b57d53b547baad66a6211cf)
+- [Enemy Explosion SFX](https://github.com/darvie/Galanaught/commit/f1f98c008d2fa6f9a9b43800c20fb2f0ee2066f5#diff-4c1a6a9839e1f0fde524ca5196fd5ead2c98a3a16a444218ec5fde7ca2d8c996)
+- [Added SFX](https://github.com/darvie/Galanaught/commit/e680fbbe62f514368285111a755550a920e0b35d)
+- [Main Menu Additions](https://github.com/darvie/Galanaught/commit/6caca31d775cb694ac47c6006c6c0aaed3739c7d)
+- [Configured Audio Manager](https://github.com/darvie/Galanaught/commit/a1099e6b523a1e28262f25663a298754150a661d)
+- [Switched Project from 3D to 2D](https://github.com/darvie/Galanaught/commit/157ae4c2cb28b0baa0dc66fb62060d838a8e77cd)
+- Configured Github with Discussions and Project board
+  - [Project Board](https://github.com/users/darvie/projects/4/views/1)
+  - [Discussions](https://github.com/darvie/Galanaught/discussions)
 
 
 ## Gamplay Video/Trailer
