@@ -516,7 +516,7 @@ MonoBehaviour:
   enemyHealth: 500
   HealthInc: 50
   DeathAnim: 0.75
-  KillTime: 180
+  KillTime: 6000
   Pspawn: 0
   incrementInterval: 5
   Counter: 0
