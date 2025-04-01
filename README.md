@@ -44,25 +44,28 @@ Players earn points by defeating enemies and their score multiplier increases as
 - [player dies](https://github.com/darvie/Galanaught/commit/90fbf346ecff7971ddc9db5d252a1272980a62b6)
 - [ENEMY FINALLY DIES](https://github.com/darvie/Galanaught/commit/0a125a50cd85bea7acbe8c9aa8858fe8aafb2b68)
 - [created an enemy spawnpoint](https://github.com/darvie/Galanaught/commit/a23c1118972ed7391dea4db3ca2219203b00803c)
-- [Long paths, 4 enemy prefabs labled accordingly](https://github.com/darvie/Galanaught/commit/b7b332e4fb43a22f44fb16df8baf06ec6ef80deb)
+- [Long paths, 4 enemy prefabs labelled accordingly](https://github.com/darvie/Galanaught/commit/b7b332e4fb43a22f44fb16df8baf06ec6ef80deb)
 - [updated textures, boss designed, etc](https://github.com/darvie/Galanaught/commit/4037bbb9bc8f104c0e9f4aba220e8468524b49f9)
 - [bullets fire](https://github.com/darvie/Galanaught/commit/51ff9995c2242a4433820136a52304e6f6f8254e)
   
 ##### Sam
-- [Sams Contribution Videos] https://youtu.be/wYEanpbYaLA, https://youtu.be/SBjL43mfw9I, https://youtu.be/G8YjE80IzI8
-- [build profile and canvas scaling] https://github.com/darvie/Galanaught/pull/63
-- [power up bug fix] https://github.com/darvie/Galanaught/pull/59
-- [health power up bug fix] https://github.com/darvie/Galanaught/pull/55
-- [bullet bug fix] https://github.com/darvie/Galanaught/pull/44
-- [Pause menu] https://github.com/darvie/Galanaught/pull/43
-- [Timer and kill counter] https://github.com/darvie/Galanaught/pull/37
-- [play area design] https://github.com/darvie/Galanaught/pull/27
-- [player shooting] https://github.com/darvie/Galanaught/pull/26
-- [main menu design] https://github.com/darvie/Galanaught/pull/25
-- [colour and background design] https://github.com/darvie/Galanaught/pull/22
-- [walls] https://github.com/darvie/Galanaught/pull/17
-- [level design] https://github.com/darvie/Galanaught/pull/16
-- [player movement] https://github.com/darvie/Galanaught/pull/2
+- [Sams Contribution Videos]
+  - https://youtu.be/wYEanpbYaLA
+  - https://youtu.be/SBjL43mfw9I
+  - https://youtu.be/G8YjE80IzI8
+- [build profile and canvas scaling] (https://github.com/darvie/Galanaught/pull/63)
+- [power up bug fix] (https://github.com/darvie/Galanaught/pull/59)
+- [health power-up bug fix] (https://github.com/darvie/Galanaught/pull/55)
+- [bullet bug fix] (https://github.com/darvie/Galanaught/pull/44)
+- [Pause menu] (https://github.com/darvie/Galanaught/pull/43)
+- [Timer and kill counter] (https://github.com/darvie/Galanaught/pull/37)
+- [play area design] (https://github.com/darvie/Galanaught/pull/27)
+- [player shooting] (https://github.com/darvie/Galanaught/pull/26)
+- [main menu design] (https://github.com/darvie/Galanaught/pull/25)
+- [colour and background design] (https://github.com/darvie/Galanaught/pull/22)
+- [walls] (https://github.com/darvie/Galanaught/pull/17)
+- [level design] (https://github.com/darvie/Galanaught/pull/16)
+- [player movement] (https://github.com/darvie/Galanaught/pull/2)
 - 
 
 ##### Darvesh
@@ -74,12 +77,12 @@ Players earn points by defeating enemies and their score multiplier increases as
 - [Main Menu Additions](https://github.com/darvie/Galanaught/commit/6caca31d775cb694ac47c6006c6c0aaed3739c7d)
 - [Configured Audio Manager](https://github.com/darvie/Galanaught/commit/a1099e6b523a1e28262f25663a298754150a661d)
 - [Switched Project from 3D to 2D](https://github.com/darvie/Galanaught/commit/157ae4c2cb28b0baa0dc66fb62060d838a8e77cd)
-- Configured Github with Discussions and Project board
+- Configured GitHub with Discussions and Project Board
   - [Project Board](https://github.com/users/darvie/projects/4/views/1)
   - [Discussions](https://github.com/darvie/Galanaught/discussions)
 
 
-## Gamplay Video/Trailer
+## Gameplay Video/Trailer
 Trailer
 [https://youtu.be/T51ylWJLzbs](https://youtu.be/KjpZd6pdCls?si=9JuLYEp7sp7T1kFX)
 
