@@ -34,7 +34,8 @@ Players earn points by defeating enemies and their score multiplier increases as
 
 
 ## Gamplay Video/Trailer
-![Trailer]()
+Trailer
+https://youtu.be/T51ylWJLzbs
 
 ### Attributions
 #### Sound
