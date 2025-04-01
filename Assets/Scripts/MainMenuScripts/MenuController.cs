@@ -45,6 +45,7 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene(levelToLoad);
         audioManager.PlayGameplayMusic(); 
+        Debug.Log("Playing Gameplay Music");
 
     }
 

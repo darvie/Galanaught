@@ -56,6 +56,13 @@ public class PauseMenuController : MonoBehaviour
         Debug.Log("Loading Main Menu");
         SceneManager.LoadScene("Main Menu");
         Time.timeScale = 1f;
-        AudioManager.PlayMainMenuMusic();
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayMainMenuMusic();
+        }
+        else
+        {
+            Debug.LogError("AudioManager Instance is NULL when calling PlayMainMenuMusic!");
+        }
     }
 }

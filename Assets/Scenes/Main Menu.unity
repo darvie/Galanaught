@@ -934,7 +934,7 @@ MonoBehaviour:
   volumeSliderValue: {fileID: 1532444363}
   confirmationPrompt: {fileID: 325583672}
   _newGameLevel: Endless Mode
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 363769898}
 --- !u!4 &598935651
 Transform:
   m_ObjectHideFlags: 0
@@ -3528,6 +3528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6422285360764129822, guid: 037117e2b508d0340afc104862af38e6, type: 3}
+      propertyPath: DefeatSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: db77f89f722c4d940b86421dc685e80c, type: 3}
     - target: {fileID: 6422285360764129822, guid: 037117e2b508d0340afc104862af38e6, type: 3}
       propertyPath: ButtonClick
       value: 

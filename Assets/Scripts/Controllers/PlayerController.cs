@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Dead;
             Debug.Log("DEATH SPRITE!");
-            AudioManager.Instance.PlayDefeatSFX();
+            // AudioManager.Instance.PlayDefeatSFX();
             Die();
         }
     }
