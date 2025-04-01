@@ -29,7 +29,25 @@ Players earn points by defeating enemies and their score multiplier increases as
 
 ## Team Contributions
 ##### Cameron Gillespie 
-- https://youtu.be/KKEjcHojaT0
+- [Cameron Contribution Video](https://youtu.be/KKEjcHojaT0)
+- [Working Heal Power up](https://github.com/darvie/Galanaught/commit/ccd28e1285ad4ec72b8ece83845ece33c4604642)
+- [fixed invuln not allowing other powerup pickups](https://github.com/darvie/Galanaught/commit/ac5d11734d667a6c8ff0685584870a8f9e038c98)
+- [BFG WORKS, ALL POWERUPS COMPLETED](https://github.com/darvie/Galanaught/commit/b0cebe1f639f795656f5401e3f2bbbd57aa39baf)
+- [3 powerups made, needs further editing](https://github.com/darvie/Galanaught/commit/a154bacc1cda4b2d8d70425bd9175abb2c2baa0b)
+- [MultiShot Powerup Done](https://github.com/darvie/Galanaught/commit/54f8f7e2d0b6e947b7ded0d1c50286ae78602e97)
+- [INVULNERABILITY POWER UP MADE](https://github.com/darvie/Galanaught/commit/a63400714b034ccd71ca510259fca610502a57fd)
+- [New Bomber Enemy and Spawns](https://github.com/darvie/Galanaught/commit/dcd4b500b214b2af1e3e58293ace06349cae8674)
+- [all enemies Explode](https://github.com/darvie/Galanaught/commit/6fe41f1c5227ac4b3733f77b62ed5ca73edea549)
+- [player has invuln frames and shield](https://github.com/darvie/Galanaught/commit/a2ff0ccba3b4ae9f499d76f0bb772c0dca04e289)
+- [enemy health Increments properly](https://github.com/darvie/Galanaught/commit/57c0f59d624b241e3afd7f73e106cd1784a28fe0)
+- [remade pathing for spawners](https://github.com/darvie/Galanaught/commit/8e70507a15821aee725522dba2f2a1f390491eaa)
+- [player dies](https://github.com/darvie/Galanaught/commit/90fbf346ecff7971ddc9db5d252a1272980a62b6)
+- [ENEMY FINALLY DIES](https://github.com/darvie/Galanaught/commit/0a125a50cd85bea7acbe8c9aa8858fe8aafb2b68)
+- [created an enemy spawnpoint](https://github.com/darvie/Galanaught/commit/a23c1118972ed7391dea4db3ca2219203b00803c)
+- [Long paths, 4 enemy prefabs labled accordingly](https://github.com/darvie/Galanaught/commit/b7b332e4fb43a22f44fb16df8baf06ec6ef80deb)
+- [updated textures, boss designed, etc](https://github.com/darvie/Galanaught/commit/4037bbb9bc8f104c0e9f4aba220e8468524b49f9)
+- [bullets fire](https://github.com/darvie/Galanaught/commit/51ff9995c2242a4433820136a52304e6f6f8254e)
+  
 ##### Sam
 ##### Darvesh
 - [Darvesh's Video Contribution](DarveshVideoContribution.mp4)
